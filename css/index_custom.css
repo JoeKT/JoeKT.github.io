@@ -1,0 +1,172 @@
+/*Jumbotron, col and button CSS*/
+.jumbotron {
+	background-color: white;
+	height: 600px;
+	padding: 50px;
+}
+.col-md-6 {
+	height: 500px;
+}
+#resume, #resume .col-md-6{
+	height: 700px;
+}
+button {
+	background-color: white;
+	border: none;
+}
+button:active {
+	border: none;
+}
+.col-md-6 p {
+	padding-top: 120px;
+}
+/*Background Images*/
+.background-image, .background-image img {
+	width: 100%;
+}
+.background-image p {
+	text-align: center;
+}
+#traditional-background {
+	background-image: url(github.com/jkosciuskotritschler.io/images/traditional-background.jpg);
+	background-repeat: no-repeat;
+}
+#story-time .col-md-6 p {
+	padding-top: 0px;
+}
+#portrait p{
+	text-align: center;
+}
+/* Hover Effects for Images and buttons*/ 
+.story-time-button {
+	position: relative;
+	z-index: +9;
+}
+.story-time-button img {
+	position: relative;
+	z-index: +10;
+	left: -130px;
+}
+.story-time-button:hover img {
+	opacity: 0;
+}
+.portrait-hover {
+	position: relative;
+	left: -400px;
+	z-index: +9;
+}
+.portrait-sketch {
+	position: relative;
+	z-index: +10;
+}
+.portrait-sketch:hover {
+	opacity: 0;
+}
+.graphic-hover {
+	position: relative;
+	top: -300px;
+	left: 0px;
+	z-index: +9;
+}
+.graphic-button {
+	position: relative;
+	z-index: +9;
+}
+.graphic-button img {
+	position: relative;
+	z-index: +10;
+	left: -110px;
+}
+.graphic-button:hover img {
+	opacity: 0;
+}
+.graphic-sketch {
+	position: relative;
+	top: 100px;
+	left: 0px;
+	z-index: +10;
+}
+.graphic-sketch:hover {
+	opacity: 0;
+}
+.theatrical-button {
+	position: relative;
+	z-index: +9;
+}
+.theatrical-button img {
+	position: relative;
+	z-index: +10;
+	left: -130px;
+}
+.theatrical-button:hover img {
+	opacity: 0;
+}
+.theatrical-hover {
+	position: relative;
+	top: -300px;
+	left: 0px;
+	z-index: +9;
+}
+.theatrical-sketch {
+	position: relative;
+	top: 100px;
+	left: 0px;
+	z-index: +10;
+}
+.theatrical-sketch:hover {
+	opacity: 0;
+}
+.traditional-button {
+	position: relative;
+	z-index: +9;
+}
+.traditional-button img {
+	position: relative;
+	z-index: +10;
+	left: -110px;
+}
+.traditional-button:hover img {
+	opacity: 0;
+}
+.traditional-hover {
+	position: relative;
+	top: -300px;
+	left: 0px;
+	z-index: +9;
+}
+.traditional-sketch {
+	position: relative;
+	top: 100px;
+	left: 0px;
+	z-index: +10;
+}
+.traditional-sketch:hover {
+	opacity: 0;
+}
+.resume-button {
+	position: relative;
+	z-index: +9;
+}
+.resume-button img {
+	position: relative;
+	z-index: +10;
+	left: -130px;
+}
+.resume-button:hover img {
+	opacity: 0;
+}
+.resume-hover {
+	position: relative;
+	top: -400px;
+	left: 0px;
+	z-index: +9;
+}
+.resume-sketch {
+	position: relative;
+	top: 100px;
+	left: 0px;
+	z-index: +10;
+}
+.resume-sketch:hover {
+	opacity: 0;
+}

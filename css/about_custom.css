@@ -1,0 +1,81 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.catan-cards-background{
+	position: fixed;
+	z-index: -1;
+	padding: 0px;
+	margin: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.jumbotron {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-top: 420px;
+	margin-bottom: 420px;
+	background-color: #333;
+}
+.top-nav i {
+  color: black;
+  position: fixed;
+  left: 80%;
+  top: 91%;
+  z-index: +3;
+}
+#navbar li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	float: right;
+	font-size: 24px;
+}
+#navbar a {
+	color: forestgreen;
+	font-family: 'Abril Fatface';
+}
+#navbar a:hover {
+	text-decoration: none;
+	opacity: .8;
+}
+.navbar-brand {
+	font-size: 28px;
+	font-family: 'Abril Fatface';
+}
+.navbar-brand:hover {
+	opacity: .8;
+	text-decoration: none;
+}
+h1 {
+	font-family: 'Cinzel Decorative';
+}
+.container p, h3, a {
+	font-family: 'Arvo';
+}
+table, select, input {
+	font-family: 'Abril Fatface';
+}
+.container {
+	color: forestgreen;
+}
+footer a {
+	font-family: 'Abril Fatface';
+	font-size: 30px;
+	color: black;
+}
+footer li {
+	display: inline;
+}
+.modal-content h3 {
+	font-family: 'Arvo';
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
