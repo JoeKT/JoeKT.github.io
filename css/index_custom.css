@@ -1,7 +1,5 @@
 /*Jumbotron, col and button CSS*/
 .jumbotron {
-	background-color: white;
-	height: 600px;
 	padding: 50px;
 }
 .col-md-6 {
@@ -20,6 +18,16 @@ button:active {
 .col-md-6 p {
 	padding-top: 120px;
 }
+/*Fonts*/
+h1, h2 {
+	font-family: 'Cinzel Decorative';
+}
+h3, h4 {
+	font-family: 'Abril Fatface';
+}
+h5, h6, p, a, li {
+	font-family: 'Arvo';
+}
 /*Background Images*/
 .background-image, .background-image img {
 	width: 100%;
@@ -28,8 +36,16 @@ button:active {
 	text-align: center;
 }
 #traditional-background {
-	background-image: url(https://github.com/JoeKT/JoeKT.github.io/blob/master/images/traditional-background.jpg);
+	z-index: -12;
 	background-repeat: no-repeat;
+	top: 0%;
+	position: fixed;
+}
+#graphic-background {
+	z-index: -12;
+	background-repeat: no-repeat;
+	top: 0%;
+	position: fixed;	
 }
 #story-time .col-md-6 p {
 	padding-top: 0px;
