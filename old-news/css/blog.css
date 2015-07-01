@@ -119,8 +119,8 @@ h6, .h6 {
 #background-image {
   z-index: -2;
   position: fixed;
-  top: 2px;
-  left: -100px;
+  top: -160px;
+  left: -140px;
 }
 #back-er-ground {
   width: 100%;
@@ -286,4 +286,12 @@ td, th {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+/*
+Scaling
+*/
+@media (max-width: 991px) {
+  #ticker {
+    display: none;
+  }
 }

@@ -27,14 +27,14 @@ body {
   color: black;
   position: fixed;
   left: 80%;
-  top: 91%;
+  top: 82%;
   z-index: +3;
 }
 .home-nav i {
   color: black;
   position: fixed;
   left: 15%;
-  top: 91%;
+  top: 82%;
   z-index: +3;
 }
 #navbar li {
@@ -93,9 +93,8 @@ footer li {
 	font-size: 30px;
 	color: #333;
 	margin-top: 100px;
-	width: 70%;
-	position: fixed;
-	left: 15%;
+  	position: relative;
+  	float: left;
 }
 #welcomePop p {
 	text-align: left;

@@ -26,15 +26,16 @@ body {
   color: black;
   position: fixed;
   left: 80%;
-  top: 91%;
+  top: 82%;
   z-index: +3;
 }
 .home-nav i {
   color: black;
   position: fixed;
   left: 15%;
-  top: 91%;
+  top: 82%;
   z-index: +3;
+  visibility: visible;
 }
 #navbar li {
 	display: inline-block;
@@ -169,4 +170,139 @@ footer li {
 	display: inline;
 	padding-left: 40px;
 	padding-right: 40px;
+}
+#warning {
+	visibility: hidden;
+}
+/*
+Scale for Map Toggles
+*/
+@media (max-width: 1199px) {
+	.first-sale {
+		top: -415px;
+		left: 52%;
+	}
+	.second-sale {
+		top: -338px;
+	  	left: 34%;
+	}
+	.third-sale {
+	  top: -490px;
+	  left: 51%;
+	}
+	.fourth-sale {
+		left: 62%;
+	  	top: -310px;
+	}
+	.fifth-sale {
+		left: 35%;
+		top: -169px;
+	}
+	.sixth-sale {
+		left: 27%;
+	  	top: -95px;
+	}
+	.seventh-sale {
+		top: -415px;
+	 	left: 14%;
+	}
+	.eighth-sale {
+		top: -340px;
+	  	left: 4%;
+	}
+	.ninth-sale {
+		top: -415px;
+	  	left: 15%;
+	}
+	.tenth-sale {
+	  left: 24%;
+	  top: -336px;
+	}
+	.eleventh-sale {
+		top: -240px;
+	  	left: 20%;
+	}
+	.twelfth-sale {
+		top: -260px;
+	  	left: 0%;
+	}
+	.thirteenth-sale {
+		top: -155px;
+	  	left: 14%;
+	}
+}
+@media (max-width: 991px)  {
+	.first-sale {
+		top: -331px;
+		left: 52%;
+		font-size: 2em;
+	}
+	.second-sale {
+		top: -270px;
+	  	left: 34%;
+	  	font-size: 2em;
+	}
+	.third-sale {
+	  top: -390px;
+	  left: 51%;
+	  font-size: 2em;
+	}
+	.fourth-sale {
+		left: 62%;
+	  	top: -250px;
+	  	font-size: 2em;
+	}
+	.fifth-sale {
+		left: 36%;
+		top: -143px;
+		font-size: 2em;
+	}
+	.sixth-sale {
+		left: 28%;
+	  	top: -87px;
+	  	font-size: 2em;
+	}
+	.seventh-sale {
+		top: -230px;
+	 	left: 15%;
+	 	font-size: 2em;
+	}
+	.eighth-sale {
+		top: -273px;
+	  	left: 6%;
+	  	font-size: 2em;
+	}
+	.ninth-sale {
+		top: -332px;
+	  	left: 16%;
+	  	font-size: 2em;
+	}
+	.tenth-sale {
+	  left: 27%;
+	  top: -270px;
+	  font-size: 2em;
+	}
+	.eleventh-sale {
+	  top: -190px;
+	  left: 23%;
+	  font-size: 2em;
+	}
+	.twelfth-sale {
+		top: -200px;
+	  	left: 4%;
+	  	font-size: 2em;
+	}
+	.thirteenth-sale {
+		top: -120px;
+	  	left: 18%;
+	  	font-size: 2em;
+	}
+}
+@media (max-width: 768px) {
+	#hide {
+		visibility: hidden;
+	}
+	#warning {
+		visibility: visible;
+	}
 }
