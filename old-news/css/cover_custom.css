@@ -1,0 +1,27 @@
+/*
+*  Custom CSS for Cover Page (Index.html)
+*/
+
+.site-wrapper {
+	background-image: url(https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/30486_140154975998321_1739522_n.jpg?oh=a017f519bd763381f461f4b8d6164b5b&oe=55F7F622);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+}
+
+.cover-heading {
+	font-size: 75px;
+	font-family: cursive;
+	position: relative;
+	color: goldenrod;
+}
+
+.lead {
+	position: relative;
+	color: goldenrod;
+}
+
+.mastfoot .inner {
+	float: left;
+	padding-bottom: 0px
+}

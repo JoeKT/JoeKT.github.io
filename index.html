@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,22 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="A Mock Website for My Portfolio">
-    <meta name="author" content="Joe Kosciusko Tritschler">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>Just Joe</title>
+    <title>Joe Kosciusko Tritschler</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/index_custom.css" rel="stylesheet">
-
+    <link href="css/custom.css" rel="stylesheet">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel+Decorative|Arvo" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel+Decorative:400, 700|Arvo" rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,79 +34,137 @@
   <body>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <header>
-      <div class="backround-image">
-        <p><img id="top-image" class="background-image" src="images/top-image.jpg"></p>
-      </div>
-    </header>
-
-    <div class="jumbotron">
-      <div class="container">
-        <div id="portrait"><p><img class="portrait-sketch" src="images/portrait.jpg"><img class="portrait-hover" src="images/portrait-hover.png"><br>Just Joe</p></div>
-      </div>
+    <div id="size-warning">
+      <p>This site is only visible on devices wider than 600px.</p>
     </div>
-
-  <div>
-    <img id="graphic-background" src="images/graphic-background.jpg">
-    <div id="story-time" class="jumbotron">
-      <div class="container">  
-        <div>
-          <div class="col-md-6"><img src="images/design-book.jpg"></div>
-          <div class="col-md-6"><p>Design is about telling stories and what better place to start then my own? From the woods of rural Massachusetts to the College of William and Mary to the stunning scenery that is Boulder, hear about my adventures as I hone my design skills and process! Or keep scrolling to skip the story and see some of my work.<br><a href="my-story.html"><button class="story-time-button" >Story Time >><img src="images/story-time.jpg"></button></a></p></div>
+    <div id="hide">
+      <div id="first-bar" class="jumbotron">
+        <div class="container col-md-8 col-md-offset-2">
+          <img id="portrait" class="col-md-6" src="images/portrait.png">
+          <p id="my-story" class="col-md-6 right">For me, design has never been about the media, it lies at the junction of people, stories, and passions.<br><a href="files/JoeKosciuskoTritschlerResume.pdf">My Resume</a></p>
         </div>
       </div>
-    </div>  
-
-    <div class="jumbotron">
-      <div class="container">
-        <div id="graphic-design">
-          <div class="col-md-6"><img class="graphic-sketch" src="images/graphic-design.jpg"><img class="graphic-hover" src="images/graphic-hover.jpg"></div>
-          <div class="col-md-6"><p>Working on a variety of projects, from consulting for a technology start-up to producing cover art for a publishing company, has provided myriad challenges and rewards and proved to be an excellent way to expand my experience. The best part was getting to work closely with clients and the passion we brought to the projects.<br><a href="graphic-design.html"><button class="graphic-button" >Explore >><img src="images/explore-three.jpg"></button></a></p></div>
+      <div id="second-bar" class="jumbotron">
+        <div class="container col-md-8 col-md-offset-2">
+          <h1 class="center">Portfolios</h1>
+          <p class="col-md-4">Graphic Design<br><img src="images/graphic-design-thumb.jpg"><br>From consulting for a technology start-up to producing cover art for a publishing company to creating a new inventory system and writing business analysis, the stories I have told will freelancing are diverse and provided myriad challenges and rewards.<br><a class="btn btn-info" href="graphic-design.html" role="button">See More &raquo;</a></p>
+          <p class="col-md-4">Theatrical Design<br><img src="images/theatrical-design-thumb.jpg"><br>An adrenaline-fueled dash to become an instant expert on everything and juggling a multitude of requirements, all while fighting against the hard deadline of opening night was an ever-exciting design challenge.<br><a class="btn btn-info" href="theatrical-design.html" role="button">See More &raquo;</a></p>
+          <p class="col-md-4">Traditional Art<br><img src="images/traditional-art-thumb.jpg"><br>I may not have been a Picasso or a Michelangelo when I started studying traditional art, but being able to share concepts pictorially through a solid understanding of design concepts may be the most valuable thing I have ever learned.<br><a class="btn btn-info" href="traditional-art.html" role="button">See More &raquo;</a></p>
         </div>
       </div>
-    </div>
-
-    <div class="jumbotron">
-      <div class="container">
-        <div id="theatrical-design">
-          <div class="col-md-6"><img class="theatrical-sketch" src="images/theatrical-design.jpg"><img class="theatrical-hover" src="images/theatrical-hover.jpg"></div>
-          <div class="col-md-6"><p>From a script and the divergent ideas of directors and designers to a unified world in full-scale brillance, theatrical design is the ultimate interactive design arena! An adrenaline-fueled dash to become an expert on everything and juggling a multitude of requirements, all while fighting against the hard deadline of opening night was an ever-exciting design challenge.<br><a href="theatrical-design.html"><button class="theatrical-button">Explore >><img src="images/explore-two.jpg"></button></a></p></div>
+      <div id="third-bar" class="jumbotron">
+        <div class="container col-md-8 col-md-offset-2">
+          <h1 class="center">Process</h1>
+          <div>
+            <div class="col-md-5">
+              <h3>Research</h3>
+              <a role="button" data-toggle="modal" data-target="#white-research-modal">
+                <img class="left-thumb" src="images/whiteboard-research-thumb.jpg">
+              </a>
+              <div class="modal fade" id="white-research-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="images/whiteboard-research-lrg.jpg">
+                  </div>
+                </div>
+              </div> 
+              <a role="button" data-toggle="modal" data-target="#paper-research-Modal">
+                <img class="right-thumb" src="images/paper-research-thumb.jpg">
+              </a>
+              <div class="modal fade" id="paper-research-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="images/paper-research-lrg.jpg">
+                  </div>
+                </div>
+              </div> 
+              <p>Every design tells a story, whether it’s about love or increased industrial efficiency, and stories are most compelling when easily believed. That's why every design starts with research: surveys, personas, studying existing competition, and talking to clients, users, friends, and experts.</p>
+            </div>
+            <div class="col-md-5  col-md-offset-2">
+              <h3>Wireframing</h3>
+              <a role="button" data-toggle="modal" data-target="#white-wire-Modal">
+                <img class="left-thumb" src="images/whiteboard-wireframe-thumb.jpg">
+              </a>
+              <div class="modal fade" id="white-wire-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="images/whiteboard-wireframe-lrg.jpg">
+                  </div>
+                </div>
+              </div> 
+              <a role="button" data-toggle="modal" data-target="#paper-wire-Modal">
+                <img class="right-thumb" src="images/paper-wireframe-thumb.jpg">
+              </a>
+              <div class="modal fade" id="paper-wire-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="images/paper-wireframe-lrg.jpg">
+                  </div>
+                </div>
+              </div>             
+              <p>Quick sketching allows for quick changes in a collaborative environment and the production of many options for feedback. Rather than diving straight into time-intensive designs, wireframing allows for efficient synthesis and evolution of research and requirements.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div id="fourth-bar" class="jumbotron">
+        <div class="container col-md-8 col-md-offset-2">
+          <div>
+            <div class="col-md-5">
+              <h3>Mock-Ups</h3>            
+              <a role="button" data-toggle="modal" data-target="#lo-fid-Modal">
+                <img class="left-thumb" src="images/lo-fidelity-mock-thumb.jpg">
+              </a> 
+              <div class="modal fade" id="lo-fid-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="images/lo-fidelity-mock-lrg.jpg">
+                  </div>
+                </div>
+              </div>                      
+              <a role="button" data-toggle="modal" data-target="#hi-fid-Modal">
+                <img class="right-thumb" src="images/hi-fidelity-mock-thumb.jpg">
+              </a>
+              <div class="modal fade" id="hi-fid-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <img src="images/hi-fidelity-mock-lrg.jpg">
+                  </div>
+                </div>
+              </div> 
+              <p>With a set of wireframe plans, it's time to create mock-ups with a more in-depth media. Mock-ups build on wireframes with color and detail. Digital and easily replicated, adjustment for feedback is easy as each round get more nuanced.</p>
+            </div>
+            <div class="col-md-5 col-md-offset-2">
+              <h3>Finished Product</h3>
+              <p>With a high-fidelity mock-up in hand, it's easy to start work in the final medium and follow the plan to completion.</p>
+              <p><a href="realtors-of-catan/realtors-of-catan-index.html">Realtors of Catan</a></p>
+              <p><a href="old-news/old-news-index.html">Old News</a></p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /container -->
 
-    <div class="jumbotron">
-      <div class="container">
-        <div id="traditional-art">
-          <div class="col-md-6"><img class="traditional-sketch" src="images/traditional-art.jpg"><img class="traditional-hover" src="images/traditional-hover.jpg"></div>
-          <div class="col-md-6"><p>I can't imagine ever creating realistic worlds on stage or helping secure venture capital as Head of Design without first learning traditional art. I may not have been a Picasso or a Michaelangelo when I started, but being able to share concepts pictorially may be the most valuable thing I have learned. In fact, without the ability to sketch, my traveling partner would never have recieved the medical treatment she needed in Hungary.<br><a href="traditional-art.html"><button class="traditional-button">Explore >><img src="images/explore-one.jpg"></button></a></p></div>
+      <div>
+        <div class="side-bar col-md-2">
+          <div class="page-nav">
+            <ul>
+              <li class="arrow-right"><a href="graphic-design.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Graphic Design</li>
+              <li class="arrow-right"><a href="theatrical-design.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Theatrical Design</li>
+              <li class="arrow-right"><a href="traditional-art.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Traditional Art</li>            
+              <li class="eye"><a href="index.html"><i class="fa fa-eye fa-4x"></i></a><br>Home</li>
+              <li class="mail"><a href="mailto:jrtritschler@gmail.com"><i class="fa fa-envelope-o fa-4x"></i></a><br>Email</li>
+              <li class="linkedin"><a href="https://www.linkedin.com/pub/joseph-kosciusko-tritschler/98/402/18b"><i class="fa fa-linkedin fa-4x"></i></a><br>LinkedIn</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div  id="resume" class="jumbotron">
-      <div class="container">
-        <div>
-          <div class="col-md-6"><img class="resume-sketch" src="images/resume-sketch.jpg"><img class="resume-hover" src="images/resume-hover.jpg"></div>
-          <div class="col-md-6"><p>Take a look at my resume or <a href="files/resume-joe-k-t.pdf" download>download</a> it.<br><a href="files/resume-joe-k-t.pdf"><button class="resume-button">Resume >><img src="images/resume-btn.jpg"></button></a></p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <footer>
-      <div class="backround-image">
-        <p><img id="bottom-image" class="background-image" src="images/bottom-image.jpg"></p>
-      </div>
-    </footer>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/hover.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
