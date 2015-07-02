@@ -30,12 +30,9 @@ body {
   z-index: +3;
 }
 .home-nav i {
-  color: black;
+  color: forestgreen;
   position: fixed;
   left: 15%;
-  top: 82%;
-  z-index: +3;
-  visibility: visible;
 }
 #navbar li {
 	display: inline-block;
@@ -160,7 +157,7 @@ footer li {
 .fa-usd {
 	visibility: hidden;
 }
-.fa-home {
+.fa-home-sale {
 	visibility: hidden;
 }
 .fa-university {

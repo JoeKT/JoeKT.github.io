@@ -39,24 +39,24 @@ CSS for the Index page
 }
 #second-bar {
 	background-color: #CD853F;
-	height: 1000px;
+	height: 900px;
 }
 #third-bar, #fourth-bar {
 	background-color: #FFDEAD;
-	height: 500px;
+	height: 400px;
 
 }
 #first-bar p, #first-bar h1, #first-bar h2, #first-bar h3, #first-bar h4 {
-	color: #888;
+	color: #d34040;
 }
 #second-bar p, #second-bar h1, #second-bar h2, #second-bar h3, #second-bar h4 {
-	color: #333;
+	color: black;
 }
 #third-bar p, #third-bar h1, #third-bar h2, #third-bar h3, #third-bar h4 {
-	color: #888;
+	color: #483d8b;
 }
 #fourth-bar p, #fourth-bar h1, #fourth-bar h2, #fourth-bar h3, #fourth-bar h4 { 
-	color: #888;
+	color: #483d8b;
 }
 #first-bar a, #third-bar a, #fourth-bar a {
 	color: #5bc0de;
@@ -79,6 +79,9 @@ p, a, button {
 .modal-content {
 	position: relative;
 }
+.btn-info {
+	background-color: #483d8b;
+}
 /*
 CSS for the portfolio pages
 */
@@ -88,6 +91,7 @@ CSS for the portfolio pages
 }
 .portfolio-jumbotron h3 {
 	line-height: 1.2em;
+	font-family: 'Arvo';
 }
 #first-picture-bar, #third-picture-bar, #fifth-picture-bar {
 	background-color: #CD853F;
@@ -167,10 +171,10 @@ CSS for Scaling
 		height: 800px;
 	}
 	#second-bar {
-		height: 2300px;
+		height: 2000px;
 	}
 	#third-bar,#fourth-bar {
-		height: 600px;
+		height: 550px;
 	}
 	.side-bar {
 		top: 3%;
@@ -183,7 +187,7 @@ CSS for Scaling
 		opacity: .6;
 	}
 	.portfolio-jumbotron {
-		height: 1060px;
+		height: 970px;
 	}
 	.portfolio-title {
 		visibility: hidden;
@@ -212,13 +216,22 @@ CSS for Scaling
 		left: -25%;
 	}
 	.portfolio-jumbotron {
-		height: 1050px;
+		height: 920px;
 	}
 	.portfolio-title {
 		visibility: hidden;
 	}
 }
 @media (min-width: 992px) and (max-width: 1311px) {
+	#first-bar {
+		height: 450px;
+	}
+	#second-bar {
+		height: 950px;
+	}
+	#third-bar, #fourth-bar {
+		height: 500px;
+	}
 	#my-story {
 		clear: bottom;
 	}
@@ -228,8 +241,11 @@ CSS for Scaling
 	.portfolio-jumbotron h3 {
 		font-size: 20px;
 	}
+	.portfolio-jumbotron {
+		height: 650px;
+	}
 	.tall {
-		height: 900px;
+		height: 700px;
 	}
 	.portfolio-title {
 		font-size: 22px;
@@ -245,15 +261,21 @@ CSS for Scaling
 }
 @media (min-width: 1312px) and (max-width: 1637px) {
 	#first-bar {
-		height: 800px;
+		height: 500px;
 	}
 	#second-bar {
-		height: 1300px;
+		height: 1000px;
 	}
 	#third-bar, #fourth-bar {
-		height: 600px;
+		height: 450px;
 	}
 	.tall {
-		height: 1150px;
+		height: 900px;
+	}
+	.portfolio-title {
+		font-size: 22px;
+	}
+	.portfolio-jumbotron {
+		height: 700px;
 	}
 }

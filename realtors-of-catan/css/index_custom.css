@@ -31,11 +31,9 @@ body {
   z-index: +3;
 }
 .home-nav i {
-  color: black;
+  color: forestgreen;
   position: fixed;
   left: 15%;
-  top: 82%;
-  z-index: +3;
 }
 #navbar li {
 	display: inline-block;
