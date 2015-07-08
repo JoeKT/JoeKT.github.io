@@ -1,6 +1,9 @@
 /*
 CSS for the Index page
 */
+a:hover {
+	text-decoration: none;
+}
 #size-warning {
 	visibility: hidden;
 	position: fixed;
@@ -41,9 +44,9 @@ CSS for the Index page
 	background-color: #CD853F;
 	height: 900px;
 }
-#third-bar, #fourth-bar {
+#third-bar {
 	background-color: #FFDEAD;
-	height: 400px;
+	height: 600px;
 
 }
 #first-bar p, #first-bar h1, #first-bar h2, #first-bar h3, #first-bar h4 {
@@ -55,14 +58,11 @@ CSS for the Index page
 #third-bar p, #third-bar h1, #third-bar h2, #third-bar h3, #third-bar h4 {
 	color: #483d8b;
 }
-#fourth-bar p, #fourth-bar h1, #fourth-bar h2, #fourth-bar h3, #fourth-bar h4 { 
-	color: #483d8b;
-}
-#first-bar a, #third-bar a, #fourth-bar a {
+#first-bar a {
 	color: #5bc0de;
 }
 .side-bar ul, .side-bar i {
-	color: #483d8b;
+	color: black;
 }
 .center {
 	text-align: center;
@@ -74,13 +74,34 @@ h2, h3, h4 {
 	font-family: 'Abril Fatface';
 }
 p, a, button {
-	font-family: 'Arvo';
+	font-family: 'Ubuntu', sans-serif;
 }
 .modal-content {
 	position: relative;
 }
 .btn-info {
 	background-color: #483d8b;
+}
+.panel-title a {
+	font-family: 'Cinzel Decorative', sans-serif;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+}
+.panel-title a:hover, .panel-title a:active {
+	text-decoration: none;
+}
+#navbar {
+	max-height: 800px;
+}
+.navbar-toggle {
+	position: fixed;
+	left: 5%;
+	top: 1%;
+	padding: 0px;
+	margin: 0px;
+	opacity: 1;
 }
 /*
 CSS for the portfolio pages
@@ -91,7 +112,7 @@ CSS for the portfolio pages
 }
 .portfolio-jumbotron h3 {
 	line-height: 1.2em;
-	font-family: 'Arvo';
+	font-family: 'Ubuntu', sans-serif;
 }
 #first-picture-bar, #third-picture-bar, #fifth-picture-bar {
 	background-color: #CD853F;
@@ -154,16 +175,47 @@ CSS for the portfolio pages
 /*
 CSS for Scaling
 */
-@media (max-width: 600px) {
-	#size-warning {
-		visibility: visible;
-		text-align: center;
-		font-size: 40px;
-		color: black;
-		top: 0px;
+@media (max-width: 374px) {
+	#first-bar {
+		height: 500px;
 	}
-	#hide {
+	#second-bar {
+		height: 2000px;
+	}
+	#third-bar {
+		height: 700px;
+	}
+	.tall {
+		height: 950px;
+	}
+	.portfolio-title {
 		visibility: hidden;
+	}
+}
+@media (min-width: 375px) and (max-width: 600px) {
+	#first-bar {
+		height: 650px;
+	}
+	#second-bar {
+		height: 2200px;
+	}
+	#third-bar {
+		height: 650px;
+	}
+	.portfolio-title {
+		visibility: hidden;
+	}
+	.portfolio-jumbotron h3 {
+		padding-top: 15px;
+	}
+	.portfolio-jumbotron {
+		height: 850px;
+	}
+	.portfolio-title {
+		visibility: hidden;
+	}
+	.tall {
+		height: 1100px;
 	}
 }
 @media (min-width: 601px) and (max-width: 767px) {
@@ -171,23 +223,21 @@ CSS for Scaling
 		height: 800px;
 	}
 	#second-bar {
-		height: 2000px;
+		height: 3000px;
 	}
-	#third-bar,#fourth-bar {
+	#third-bar {
 		height: 550px;
 	}
 	.side-bar {
 		top: 3%;
 		left: 80%;
-		opacity: .6;
 	}
 	.portfolio-side-bar {
 		top: 3%;
 		left: 80%;
-		opacity: .6;
 	}
 	.portfolio-jumbotron {
-		height: 970px;
+		height: 1100px;
 	}
 	.portfolio-title {
 		visibility: hidden;
@@ -200,15 +250,18 @@ CSS for Scaling
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	.tall {
+		height: 1400px;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	#first-bar {
 		height: 800px;
 	}
 	#second-bar {
-		height: 2300px;
+		height: 3000px;
 	}
-	#third-bar, #fourth-bar {
+	#third-bar {
 		height: 600px;
 	}
 	#white-research-modal .modal-content {
@@ -216,21 +269,24 @@ CSS for Scaling
 		left: -25%;
 	}
 	.portfolio-jumbotron {
-		height: 920px;
+		height: 1000px;
 	}
 	.portfolio-title {
 		visibility: hidden;
 	}
+	.tall {
+		height: 1400px;
+	}
 }
 @media (min-width: 992px) and (max-width: 1311px) {
 	#first-bar {
-		height: 450px;
+		height: 600px;
 	}
 	#second-bar {
 		height: 950px;
 	}
-	#third-bar, #fourth-bar {
-		height: 500px;
+	#third-bar {
+		height: 575px;
 	}
 	#my-story {
 		clear: bottom;
@@ -245,7 +301,7 @@ CSS for Scaling
 		height: 650px;
 	}
 	.tall {
-		height: 700px;
+		height: 900px;
 	}
 	.portfolio-title {
 		font-size: 22px;
@@ -261,21 +317,29 @@ CSS for Scaling
 }
 @media (min-width: 1312px) and (max-width: 1637px) {
 	#first-bar {
-		height: 500px;
+		height: 600px;
 	}
 	#second-bar {
 		height: 1000px;
 	}
-	#third-bar, #fourth-bar {
-		height: 450px;
+	#third-bar {
+		height: 600px;
 	}
 	.tall {
-		height: 900px;
+		height: 1200px;
 	}
 	.portfolio-title {
 		font-size: 22px;
 	}
 	.portfolio-jumbotron {
-		height: 700px;
+		height: 800px;
+	}
+}
+@media (min-width: 1637px) {
+	.navbar-toggle {
+		display: none;
+	}
+	.navbar-collapse, .collapse {
+		display: none;
 	}
 }

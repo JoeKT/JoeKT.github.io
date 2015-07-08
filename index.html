@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel+Decorative:400, 700|Arvo" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel+Decorative:400, 700|Ubuntu" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,133 +32,161 @@
   </head>
 
   <body>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div id="size-warning">
-      <p>This site is only visible on devices wider than 600px.</p>
+    <div id="first-bar" class="jumbotron">
+      <div class="container">
+        <img id="portrait" class="col-md-4 col-xs-10" src="images/portrait.png">
+        <p id="my-story" class="col-md-6 col-xs-10 col-xs-offset-3"><br><br>Design has never been about the media, it lies at the junction of people, stories, and passions.<br><a href="files/JoeKosciuskoTritschlerResume.pdf" target="_blank">My Resume</a></p>
+      </div>
     </div>
-    <div id="hide">
-      <div id="first-bar" class="jumbotron">
-        <div class="container col-md-8 col-md-offset-2">
-          <img id="portrait" class="col-md-6" src="images/portrait.png">
-          <p id="my-story" class="col-md-6 right">For me, design has never been about the media, it lies at the junction of people, stories, and passions.<br><a href="files/JoeKosciuskoTritschlerResume.pdf">My Resume</a></p>
-        </div>
+    <div id="second-bar" class="jumbotron">
+      <div class="container">
+        <h1 class="center">Portfolios</h1>
+        <p class="col-md-4">Graphic Design<br><img class="col-xs-12" src="images/graphic-design-thumb.jpg"><br>Consulting for a technology start-up, producing cover art for a publishing company, creating a new inventory system and writing business analysis: the stories I have told will freelancing provided myriad challenges and rewards.<br><a class="btn btn-info" href="graphic-design.html" role="button">View &raquo;</a></p>
+        <p class="col-md-4">Theatrical Design<br><img class="col-xs-12" src="images/theatrical-design-thumb.jpg"><br> Becoming an expert on everything and juggling a multitude of requirements, all while fighting against the hard deadline of opening night was an ever-exciting design challenge.<br><a class="btn btn-info" href="theatrical-design.html" role="button">View &raquo;</a></p>
+        <p class="col-md-4">Traditional Art<br><img class="col-xs-12" src="images/traditional-art-thumb.jpg"><br>I was not a Renaissance Master when I started traditional art, but being able to share concepts pictorially through a solid understanding of design concepts is the most valuable skill I have ever learned.<br><a class="btn btn-info" href="traditional-art.html" role="button">View &raquo;</a></p>
       </div>
-      <div id="second-bar" class="jumbotron">
-        <div class="container col-md-8 col-md-offset-2">
-          <h1 class="center">Portfolios</h1>
-          <p class="col-md-4">Graphic Design<br><img src="images/graphic-design-thumb.jpg"><br>Consulting for a technology start-up, producing cover art for a publishing company, creating a new inventory system and writing business analysis: the stories I have told will freelancing provided myriad challenges and rewards.<br><a class="btn btn-info" href="graphic-design.html" role="button">View &raquo;</a></p>
-          <p class="col-md-4">Theatrical Design<br><img src="images/theatrical-design-thumb.jpg"><br> Becoming an expert on everything and juggling a multitude of requirements, all while fighting against the hard deadline of opening night was an ever-exciting design challenge.<br><a class="btn btn-info" href="theatrical-design.html" role="button">View &raquo;</a></p>
-          <p class="col-md-4">Traditional Art<br><img src="images/traditional-art-thumb.jpg"><br>I was not a Renaissance Master when I started traditional art, but being able to share concepts pictorially through a solid understanding of design concepts is the most valuable skill I have ever learned.<br><a class="btn btn-info" href="traditional-art.html" role="button">View &raquo;</a></p>
-        </div>
-      </div>
-      <div id="third-bar" class="jumbotron">
-        <div class="container col-md-8 col-md-offset-2">
-          <h1 class="center">Process</h1>
-          <div>
-            <div class="col-md-5">
-              <h3>Research</h3>
-              <a role="button" data-toggle="modal" data-target="#white-research-modal">
-                <img class="left-thumb" src="images/whiteboard-research-thumb.jpg">
-              </a>
-              <div class="modal fade" id="white-research-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <img src="images/whiteboard-research-lrg.jpg">
-                  </div>
-                </div>
-              </div> 
-              <a role="button" data-toggle="modal" data-target="#paper-research-Modal">
-                <img class="right-thumb" src="images/paper-research-thumb.jpg">
-              </a>
-              <div class="modal fade" id="paper-research-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <img src="images/paper-research-lrg.jpg">
-                  </div>
-                </div>
-              </div> 
-              <p>Surveys, personas, studying existing competition, and talking to clients, users, friends, and experts: every design starts with research because it leads to more compelling stories.</p>
+    </div>
+    <div id="third-bar" class="jumbotron">
+      <div class="container">
+        <h1 class="center">Process</h1>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Research
+                </a>
+              </h4>
             </div>
-            <div class="col-md-5  col-md-offset-2">
-              <h3>Wireframing</h3>
-              <a role="button" data-toggle="modal" data-target="#white-wire-Modal">
-                <img class="left-thumb" src="images/whiteboard-wireframe-thumb.jpg">
-              </a>
-              <div class="modal fade" id="white-wire-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <img src="images/whiteboard-wireframe-lrg.jpg">
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <a role="button" data-toggle="modal" data-target="#white-research-modal">
+                  <img class="left-thumb" src="images/whiteboard-research-thumb.jpg">
+                </a>
+                <div class="modal fade" id="white-research-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <img class="col-xs-12" src="images/whiteboard-research-lrg.jpg">
+                    </div>
                   </div>
-                </div>
-              </div> 
-              <a role="button" data-toggle="modal" data-target="#paper-wire-Modal">
-                <img class="right-thumb" src="images/paper-wireframe-thumb.jpg">
-              </a>
-              <div class="modal fade" id="paper-wire-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <img src="images/paper-wireframe-lrg.jpg">
+                </div> 
+                <a role="button" data-toggle="modal" data-target="#paper-research-Modal">
+                  <img class="right-thumb" src="images/paper-research-thumb.jpg">
+                </a>
+                <div class="modal fade" id="paper-research-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <img class="col-xs-12" src="images/paper-research-lrg.jpg">
+                    </div>
                   </div>
-                </div>
-              </div>             
-              <p>Quick sketching allows for quick changes. Rather than diving straight into time-intensive designs, wireframing allows for efficient synthesis and evolution of research and requirements.</p>
+                </div> 
+                <p>Surveys, personas, studying existing competition, and talking to clients, users, friends, and experts: every design starts with research because it leads to more compelling stories.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="fourth-bar" class="jumbotron">
-        <div class="container col-md-8 col-md-offset-2">
-          <div>
-            <div class="col-md-5">
-              <h3>Mock-Ups</h3>            
-              <a role="button" data-toggle="modal" data-target="#lo-fid-Modal">
-                <img class="left-thumb" src="images/lo-fidelity-mock-thumb.jpg">
-              </a> 
-              <div class="modal fade" id="lo-fid-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <img src="images/lo-fidelity-mock-lrg.jpg">
-                  </div>
-                </div>
-              </div>                      
-              <a role="button" data-toggle="modal" data-target="#hi-fid-Modal">
-                <img class="right-thumb" src="images/hi-fidelity-mock-thumb.jpg">
-              </a>
-              <div class="modal fade" id="hi-fid-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <img src="images/hi-fidelity-mock-lrg.jpg">
-                  </div>
-                </div>
-              </div> 
-              <p>Mock-ups build on wireframes with color and detail. Digital and easily replicated, adjustment for feedback is easy as each round get more nuanced.</p>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Wireframing
+                </a>
+              </h4>
             </div>
-            <div class="col-md-5 col-md-offset-2">
-              <h3>Finished Product</h3>
-              <p>With a high-fidelity mock-up in hand, it's easy to start work in the final medium and follow the plan to completion.</p>
-              <p><a style="color: black" href="realtors-of-catan/realtors-of-catan-index.html">Realtors of Catan</a></p>
-              <p><a style="color: black" href="old-news/old-news-index.html">Old News</a></p>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <a role="button" data-toggle="modal" data-target="#white-wire-Modal">
+                  <img class="left-thumb" src="images/whiteboard-wireframe-thumb.jpg">
+                </a>
+                <div class="modal fade" id="white-wire-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <img class="col-xs-12" src="images/whiteboard-wireframe-lrg.jpg">
+                    </div>
+                  </div>
+                </div> 
+                <a role="button" data-toggle="modal" data-target="#paper-wire-Modal">
+                  <img class="right-thumb" src="images/paper-wireframe-thumb.jpg">
+                </a>
+                <div class="modal fade" id="paper-wire-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <img class="col-xs-12" src="images/paper-wireframe-lrg.jpg">
+                    </div>
+                  </div>
+                </div>             
+                <p>Quick sketching allows for quick changes. Rather than diving straight into time-intensive designs, wireframing allows for efficient synthesis and evolution of research and requirements.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div> <!-- /container -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Mock-ups
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <a role="button" data-toggle="modal" data-target="#lo-fid-Modal">
+                  <img class="left-thumb" src="images/lo-fidelity-mock-thumb.jpg">
+                </a> 
+                <div class="modal fade" id="lo-fid-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <img class="col-xs-12" src="images/lo-fidelity-mock-lrg.jpg">
+                    </div>
+                  </div>
+                </div>                      
+                <a role="button" data-toggle="modal" data-target="#hi-fid-Modal">
+                  <img class="right-thumb" src="images/hi-fidelity-mock-thumb.jpg">
+                </a>
+                <div class="modal fade" id="hi-fid-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <img class="col-xs-12" src="images/hi-fidelity-mock-lrg.jpg">
+                    </div>
+                  </div>
+                </div> 
+                <p>Mock-ups build on wireframes with color and detail. Digital and easily replicated, adjustment for feedback is easy as each round get more nuanced.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Finished Product
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                <p>With a high-fidelity mock-up in hand, it's easy to start work in the final medium and follow the plan to completion.</p>
+                <p><a style="color: black" href="realtors-of-catan/realtors-of-catan-index.html">Realtors of Catan</a></p>
+                <p><a style="color: black" href="old-news/old-news-index.html">Old News</a></p>                  
+              </div>
+            </div>
+          </div>
+        </div>          
+      </div>
+    </div>
+  </div>
 
-      <div>
-        <div class="side-bar col-md-2">
-          <div class="page-nav">
-            <ul>
-              <li class="arrow-right"><a href="graphic-design.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Graphic Design</li>
-              <li class="arrow-right"><a href="theatrical-design.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Theatrical Design</li>
-              <li class="arrow-right"><a href="traditional-art.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Traditional Art</li>            
-              <li class="eye"><a href="index.html"><i class="fa fa-eye fa-4x"></i></a><br>Home</li>
-              <li class="mail"><a href="mailto:jrtritschler@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-4x"></i></a><br>Email</li>
-              <li class="linkedin"><a href="https://www.linkedin.com/pub/joseph-kosciusko-tritschler/98/402/18b"><i class="fa fa-linkedin fa-4x"></i></a><br>LinkedIn</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+  <div class="side-bar">
+    <button type="button" id="toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars fa-3x"></i>
+    </button>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="arrow-right"><a href="graphic-design.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Graphic Design</li>
+        <li class="arrow-right"><a href="theatrical-design.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Theatrical Design</li>
+        <li class="arrow-right"><a href="traditional-art.html"><i class="fa fa-arrow-right fa-4x"></i></a><br>Traditional Art</li>            
+        <li class="eye"><a href="index.html"><i class="fa fa-eye fa-4x"></i></a><br>Home</li>
+        <li class="mail"><a href="mailto:jrtritschler@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-4x"></i></a><br>Email</li>
+        <li class="linkedin"><a href="https://www.linkedin.com/pub/joseph-kosciusko-tritschler/98/402/18b" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a><br>LinkedIn</li>
+      </ul>
+    </div>
+  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

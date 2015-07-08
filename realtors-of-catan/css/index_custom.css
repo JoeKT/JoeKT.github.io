@@ -94,10 +94,21 @@ footer li {
   	position: relative;
   	float: left;
 }
-#welcomePop p {
+#welcomePop .welcomeText {
 	text-align: left;
 	padding-left: 50px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	padding-right: 50px;
+}
+.modal-header p, .modal-footer p {
+	font-size: 36px;
+}
+.modal-footer .btn p {
+    padding-bottom: 0px;
+    border-top-width: 0px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 0px;
 }
