@@ -321,14 +321,14 @@ CSS for Scaling
 	#third-bar {
 		height: 600px;
 	}
-	.tall {
-		height: 1200px;
-	}
 	.portfolio-title {
 		font-size: 22px;
 	}
 	.portfolio-jumbotron {
 		height: 800px;
+	}
+		.tall {
+		height: 1200px;
 	}
 }
 @media (min-width: 1637px) {
