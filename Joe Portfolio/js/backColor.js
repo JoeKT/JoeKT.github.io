@@ -1,1 +1,0 @@
-$("body").css("background","#9a9a9a");

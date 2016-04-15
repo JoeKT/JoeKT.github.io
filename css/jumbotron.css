@@ -1,0 +1,523 @@
+/*
+-----General Styling-----
+*/
+
+body {
+  font-family: "Francois One", sans-serif;
+  color: black;
+  background: #ffffff;
+  font-size: 20px;
+}
+.jumbotron {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+#side-nav-span {
+	cursor: pointer;
+	position: fixed;
+	z-index: 150;
+	margin-top: 20px;
+	margin-left: -15px;
+}
+.side-nav {
+	position: fixed;
+	z-index: 100;
+	display: none;
+	margin-top: 30px;
+}
+.side-nav ul {
+	list-style: none;
+	padding-top: 50px;
+}
+.side-nav ul li {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 20px;
+}
+.side-nav ul li button {
+	background-color: #222;
+	padding:20px;
+	border: none;
+	border-radius: 10px;
+	width: 250px;
+}
+.side-nav a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	width: 250px;
+}
+.side-nav a:hover {
+	color: #CEB573;
+}
+.navbar {
+	background: #333;
+}
+.navbar-nav li a{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #CEB573;
+}
+#navbar ul li a {
+	color: #CEB573;
+}
+footer {
+	background: #333;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	position: relative;
+	clear: both;
+	z-index: 50;
+}
+.text-wrapper {
+	text-align: center;
+}
+footer .text-wrapper p {
+	display: inline;
+	padding-right: 40px;
+	color: #CEB573;
+	font-size: 20px;
+}
+.backTotal {
+	opacity: 1;
+	background-color: white;
+}
+.xactoBack {
+    background-image: url(../images/xacto.png);
+    background-size: contain;
+    position: fixed;
+    height: 610px;
+    width: 480px;
+    bottom: 0;
+    left: 86%;
+    background-repeat: no-repeat;
+}
+.matBack{
+	background-image: url(../images/greenMatBack.jpg);
+	background-size: cover;
+	position: fixed;
+	height: 300%;
+	width: 100%;
+	background-repeat: no-repeat;
+	opacity: .75;
+}
+/*
+-----Path Styling for SVG-----
+*/
+path {
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/*
+-----Index Styling-----
+*/
+.fadeOut {
+	position: fixed;
+	z-index: +70;
+	top: 5%;
+	max-width: 100%;
+}
+.hiddenBody {
+	display: none;
+}
+.gifBack {
+	padding-top: 50px;
+	background: #ffffff; 
+	height: 600px;
+	position: relative;
+	z-index: 50;
+}
+.hook {
+	background-image: url(../images/filler.jpg);
+	background-size: cover;
+	height: 600px;
+	padding-top: 20px;
+	position: relative;
+	z-index: 50;
+	background-position-y: 50%;
+}
+.hook h1 {
+	color: white;
+	text-align: center;
+	line-height: 2em;
+	padding-top: 20px;
+}
+.name {
+	font-size: 60px;
+}
+.UX {
+	font-size: 60px;
+	margin-top: -90px;
+}
+.imageTheatre {
+	background-image: url(../images/appMap.png);
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 30;
+}
+.imageBook {
+	background-image: url(../images/map.jpg);
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 30;
+}
+.descriptor-banner {
+    position: fixed;
+    top: 100px;
+    display: none;
+    max-width: 350px;
+}
+.non-nav-one, .non-nav-two, .non-nav-three {
+	background-color: #222;
+	border-radius: 10px;
+	border: none;
+	width: 320px;
+	border: 3px solid #222;
+}
+.non-nav-one p, .non-nav-two p, .non-nav-three p {
+	font-size: 16px;
+}
+.descriptor-banner p, .descriptor-banner h1 {
+	padding-top: 5px;
+}
+.massive-button, .massive-button:hover {
+	text-decoration: none;
+}
+.massive-button p, .massive-button h1 {
+	color: white;
+}
+.descriptor-box-one, .descriptor-box-two {
+    position: fixed;
+    top: 600px;
+    display: none;
+    max-width: 350px;
+}
+.box-holder {
+	height: 380px;
+}
+
+/*
+-----UX Page Styling-----
+*/
+
+.uxBackOne .container {
+	background-color: #ECECE9;
+	border-radius: 20px;
+}
+.uxBackTwo .container {
+	background-color: #ffffff;
+	border-radius: 20px;
+}
+.uxBackThree .container {
+	background-color: #ECECE9;
+	border-radius: 20px;
+}
+.uxBackThree li {
+	font-size: 20px;
+	border-radius: 20px;
+}
+.uxBackFour .container {
+	background-color: #ffffff;
+	border-radius: 20px;
+}
+.uxBackFive .container {
+	background-color: #ECECE9;
+	border-radius: 20px;
+}
+.uxBackOne p, .uxBackOne li, .uxBackThree p, .uxBackThree li, .uxBackFour p, .uxBackFour li, .uxBackFive p, .uxBackFive li {
+	color: black;
+}
+.uxBackTwo p, .uxBackTwo li {
+	color: black;
+}
+.uxBackOne {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin-right: -15px;
+	margin-left: -15px;
+	background-color: #ECECE9;
+    border-bottom: 3px solid #999;
+}
+.uxBackTwo {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin-right: -15px;
+	margin-left: -15px;
+	background-color: #ffffff;
+    border-bottom: 3px solid #999;
+}
+.uxBackThree {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin-right: -15px;
+	margin-left: -15px;
+	background-color: #ECECE9;
+    border-bottom: 3px solid #999;
+}
+.uxBackFour {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin-right: -15px;
+	margin-left: -15px;
+	background-color: #ffffff;
+    border-bottom: 3px solid #999;	
+}
+.uxBackFour h2 {
+	font-size: 40px;
+}
+.uxBackFive {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin-right: -15px;
+	margin-left: -15px;
+	background-color: #ECECE9;
+    border-bottom: 3px solid #999;
+}
+.uxBackFive h1 {
+	padding-bottom: 10px;
+}
+.origin, .originZoom, .sketchOne, .sketchTwo, .sketchThree, .sketchFour, .sketchFive, .sketchSix, .meFiOne, .meFiTwo, .meFiThree, .meFiFour, .appSketchOne, .appSketchTwo, .appSketchThree, .appSketchFour, .appScreenOne, .appScreenTwo, .appScreenThree, .appScreenFour {
+	height: 400px;
+	background-repeat: no-repeat;
+}
+.appMap {
+	height: 650px;
+	background-repeat: no-repeat;
+}
+.origin {
+	background-image: url(../images/origin.jpg);
+	background-size: contain;
+}
+.originZoom {
+	background-image: url(../images/originZoom.jpg);
+	background-size: contain;
+}
+.sketchOne {
+	background-image: url(../images/sketchLanding.jpg);
+	background-size: contain;
+}
+.sketchTwo {
+	background-image: url(../images/sketchProfile.jpg);
+	background-size: contain;
+}
+.sketchThree {
+	background-image: url(../images/sketchChat.jpg);
+	background-size: contain;
+}
+.sketchFour {
+	background-image: url(../images/sketchTrade.jpg);
+	background-size: contain;
+}
+.sketchFive {
+	background-image: url(../images/sketchUIOne.jpg);
+	background-size: contain;
+}
+.sketchSix {
+	background-image: url(../images/sketchUITwo.jpg);
+	background-size: contain;
+}
+.meFiOne {
+	background-image: url(../images/meFiLanding.jpg);
+	background-size: contain;
+}
+.meFiTwo {
+	background-image: url(../images/meFiChat.jpg);
+	background-size: contain;
+}
+.meFiThree {
+	background-image: url(../images/meFiTrade.jpg);
+	background-size: contain;
+}
+.meFiFour {
+	background-image: url(../images/meFiPins.jpg);
+	background-size: contain;
+}
+.hiFi {
+	background-image: url(../images/hiFiMap.jpg);
+	background-size: cover;
+	height: 1000px;
+	margin-bottom: 20px;
+}
+.appmap {
+	background-image: url(../images/appMap.png);
+	background-size: contain;
+}
+.appSketchOne {
+	background-image: url(../images/appRapidSketchOne.png);
+	background-size: contain;
+}
+.appSketchTwo {
+	background-image: url(../images/appRapidSketchTwo.png);
+	background-size: contain;
+}
+.appSketchThree {
+	background-image: url(../images/appRapidSketchThree.png);
+	background-size: contain;
+}
+.appSketchFour {
+	background-image: url(../images/appRapidSketchFour.png);
+	background-size: contain;
+}
+.appScreenOne {
+	background-image: url(../images/appScreenOne.png);
+	background-size: contain;
+}
+.appScreenTwo {
+	background-image: url(../images/appScreenTwo.png);
+	background-size: contain;
+}
+.appScreenThree {
+	background-image: url(../images/appScreenThree.png);
+	background-size: contain;
+}
+.appScreenFour {
+	background-image: url(../images/appScreenFour.png);
+	background-size: contain;
+}
+.proto {
+	background: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+}
+.proto:hover {
+	border: 2px solid #000;
+}
+.proto a {
+	color: #222;
+	text-decoration: none;
+}
+
+/*
+-----@Media Styles-----
+*/
+
+
+@media (max-width: 991px) {
+	.navbar-nav li a{
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 16px;
+	}
+	.descriptor-box-one, .descriptor-box-two {
+    	position: relative;
+    	left: 25%;
+    	top: 250;
+	}
+	.descriptor-banner {
+    	position: relative;
+    	left: 15%;
+    	top: 250px;
+	}
+	.hook {
+		background-image: url(../images/filler.jpg);
+		background-size: cover;
+		height: 600px;
+		padding-top: 20px;
+	}	
+}
+@media (max-width: 767px) {
+	footer .text-wrapper p {
+		display: inherit;
+	}
+	.hook {
+		background-image: url(../images/filler.jpg);
+		background-size: cover;
+		height: 600px;
+		padding-top: 20px;
+	}
+	.descriptor-banner {
+    	position: relative;
+    	left: 25%;
+    	top: 250px;
+	}
+}
+@media (max-width: 650px) {
+	.descriptor-box-one, .descriptor-box-two {
+    	position: relative;
+    	left: 10%;
+    	top: 250px;
+	}
+	.descriptor-banner {
+    	position: relative;
+    	left: 10%;
+    	top: 250px;
+    }
+    .name {
+		font-size: 40px !important;
+		padding-top: 220px !important;
+	}
+	.UX {
+		font-size: 40px !important;
+		margin-top: 0px;
+		padding-bottom: 50px;
+	}
+	.hook h1 {
+		color: white;
+		text-align: center;
+		line-height: 1.5em;
+		padding-top: 100px;
+		font-size: 26px;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.hook {
+		background-position-x: 50%;
+	}
+}
+@media (max-width: 530px) {
+	.descriptor-box-one, .descriptor-box-two {
+    	position: relative;
+    	left: 0%;
+    	top: 250;
+	}
+	.descriptor-banner {
+    	position: relative;
+    	left: -30%;
+    	top: 250px;
+    	max-width: 350px;
+    }
+    .left-text, .UX-Text {
+    	display: none;
+	}
+	.descriptor-banner p {
+		font-size: 12px;
+	}
+	.appMap {
+		height: 500px;
+	}
+	.name {
+		font-size: 40px !important;
+		padding-top: 120px !important;
+	}
+	.UX {
+		font-size: 40px !important;
+		margin-top: 0px;
+		padding-bottom: 50px;
+	}
+	.hook h1 {
+		color: white;
+		text-align: center;
+		line-height: 1.5em;
+		padding-top: 100px;
+		font-size: 26px;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.hook {
+		background-position-x: 50%;
+	}
+}
