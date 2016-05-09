@@ -201,7 +201,7 @@ path {
 }
 .descriptor-box-one, .descriptor-box-two {
     position: fixed;
-    top: 600px;
+    top: 40%;
     display: none;
     max-width: 350px;
 }
