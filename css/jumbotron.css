@@ -481,7 +481,7 @@ path {
 	z-index: +70;
 	top: -5%;
 	max-width: 100%;
-}
+        }
 }
 @media (max-width: 530px) {
 	.descriptor-box-one, .descriptor-box-two {
