@@ -477,10 +477,7 @@ path {
 		background-position-x: 50%;
 	}
 	.fadeOut {
-	position: fixed;
-	z-index: +70;
-	top: 0px;
-	max-width: 100%;
+	display: none;
         }
 }
 @media (max-width: 530px) {
