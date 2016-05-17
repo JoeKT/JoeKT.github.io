@@ -479,7 +479,7 @@ path {
 	.fadeOut {
 	position: fixed;
 	z-index: +70;
-	top: -5%;
+	top: 0px;
 	max-width: 100%;
         }
 }
