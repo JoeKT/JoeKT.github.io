@@ -476,9 +476,6 @@ path {
 	.hook {
 		background-position-x: 50%;
 	}
-	.fadeOut {
-	display: none;
-        }
 }
 @media (max-width: 530px) {
 	.descriptor-box-one, .descriptor-box-two {
