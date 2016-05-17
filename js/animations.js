@@ -18,8 +18,12 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(document).ready(function () {
-	$(".fadeOut").fadeIn(3000).fadeOut(3000);
-	$(".hiddenBody").fadeIn(5000);
+	if (window.innerWidth < 651) {
+		$(".hiddenBody").fadeIn(5000);	
+	} else {
+		$(".fadeOut").fadeIn(3000).fadeOut(3000);
+		$(".hiddenBody").fadeIn(5000);	
+	}
 	if (window.innerWidth > 991) {
 		$(".descriptor-box-one").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
 			$(".descriptor-box-one").animate({"left":"20%"});
