@@ -20,7 +20,7 @@ $(".imageBook").mouseleave(function () {
 $(document).ready(function () {
 	if (window.innerWidth < 651) {
 		$(".fadeOut").css("display", "none");		
-		$(".hiddenBody").fadeIn(5000);	
+		$(".hiddenBody").fadeIn(2000);	
 	} else {
 		$(".fadeOut").fadeIn(3000).fadeOut(3000);
 		$(".hiddenBody").fadeIn(5000);	
