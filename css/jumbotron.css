@@ -454,8 +454,8 @@ path {
     	position: relative;
     	left: 10%;
     	top: 250px;
-    }
-    .name {
+        }
+        .name {
 		font-size: 40px !important;
 		padding-top: 220px !important;
 	}
@@ -476,6 +476,12 @@ path {
 	.hook {
 		background-position-x: 50%;
 	}
+	.fadeOut {
+	position: fixed;
+	z-index: +70;
+	top: -5%;
+	max-width: 100%;
+}
 }
 @media (max-width: 530px) {
 	.descriptor-box-one, .descriptor-box-two {
