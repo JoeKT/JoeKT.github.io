@@ -214,20 +214,20 @@ path {
     width: 100%; 
     height: 100%; 
     position: fixed; 
-    top: 0; 
-    left: 0;
-    -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
-    transition: width .5s;
+    top: 50%; 
+    left: 50%;
+    -webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
+    transition: width .25s;
 }
 .imageBook.fullscreen {
     z-index: 9999; 
     width: 100%; 
     height: 100%; 
     position: fixed; 
-    top: 0; 
-    left: 0;
-    -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
-    transition: width .5s;
+    top: 50%; 
+    left: 50%;
+    -webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
+    transition: width .25s;
 }
 
 /*
