@@ -17,12 +17,12 @@ $(".imageBook").mouseleave(function () {
 	$(".non-nav-three").css("border", "none");
 });
 
-$("#caseStudyTwo").onclick = transitionFunction;
-$("#caseStudyOne").onclick = transitionFunction;
-
-function transitionFunction () {
-	this.toggleClass('fullscreen');
-};
+$(".imageTheatre").click( function() {
+	$(".imageTheatre").toggleClass('fullscreen');
+});
+$(".imageBook").click( function() {
+	$(".imageBook").toggleClass('fullscreen');
+});
 
 $(document).ready(function () {
 	if (window.innerWidth < 651) {
