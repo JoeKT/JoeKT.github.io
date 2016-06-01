@@ -18,11 +18,18 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(".imageTheatre").click( function() {
-	$(".imageTheatre").toggleClass('fullscreen');
+	$(".imageTheatre").toggleClass('fullscreen').setTimeout(travel1, 200);
 });
 $(".imageBook").click( function() {
-	$(".imageBook").toggleClass('fullscreen');
+	$(".imageBook").toggleClass('fullscreen').setTimeout(travel2, 200);
 });
+
+var travel1 = function () {
+	window.location = "http://JoeKT.github.io/case_study_one.html/"
+};
+var travel2 =function () {
+	window.location = "http://JoeKT.github.io/case_study_two.html/"
+};
 
 $(document).ready(function () {
 	if (window.innerWidth < 651) {
