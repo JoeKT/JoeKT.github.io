@@ -166,8 +166,8 @@ path {
 	height: 600px;
 	position: relative;
 	z-index: 30;
-	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    	transition: width 2s;
+	-webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+    	transition: width .5s;
     	-webkit-transition-timing-function: ease;
     	transition-timing-function: ease;
 }
@@ -177,8 +177,8 @@ path {
 	height: 600px;
 	position: relative;
 	z-index: 30;
-	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    	transition: width 2s;
+	-webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+    	transition: width .5s;
     	-webkit-transition-timing-function: ease;
     	transition-timing-function: ease;
 }
@@ -224,8 +224,8 @@ path {
     position: fixed; 
     top: 0; 
     left: 0;
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s;
+    -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+    transition: width .5s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
 }
@@ -236,8 +236,8 @@ path {
     position: fixed; 
     top: 0; 
     left: 0;
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s;
+    -webkit-transition: width .5s; /* For Safari 3.1 to 6.0 */
+    transition: width .5s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
 }
