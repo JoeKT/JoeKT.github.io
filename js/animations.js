@@ -19,11 +19,11 @@ $(".imageBook").mouseleave(function () {
 
 $(".imageTheatre").click( function() {
 	$(".imageTheatre").toggleClass('fullscreen').fadeOut("slow");
-	window.setTimeout(travel1, 2000);
+	window.setTimeout(travel1, 6000);
 });
 $(".imageBook").click( function() {
 	$(".imageBook").toggleClass('fullscreen').fadeOut("slow");
-	window.setTimeout(travel2, 2000);
+	window.setTimeout(travel2, 6000);
 });
 
 var travel1 = function () {
