@@ -18,10 +18,10 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(".imageTheatre").click( function() {
-	$(".imageTheatre").toggleClass('fullscreen').fadeOut(200).function(travel1);
+	$(".imageTheatre").toggleClass('fullscreen').function(travel1);
 });
 $(".imageBook").click( function() {
-	$(".imageBook").toggleClass('fullscreen').fadeOut(200).function(travel2);
+	$(".imageBook").toggleClass('fullscreen').function(travel2);
 });
 
 $(document).ready(function () {
