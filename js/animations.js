@@ -27,10 +27,10 @@ $(".imageBook").click( function() {
 });
 
 var travel1 = function () {
-	window.location = "http://JoeKT.github.io/case_study_one.html/"
+	window.location = "http://joekt.github.io/case_study_one.html"
 };
 var travel2 =function () {
-	window.location = "http://JoeKT.github.io/case_study_two.html/"
+	window.location = "http://joekt.github.io/case_study_two.html"
 };
 
 $(document).ready(function () {
