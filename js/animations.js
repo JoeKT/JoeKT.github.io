@@ -18,12 +18,14 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(".imageTheatre").click( function() {
-	$(".imageTheatre").toggleClass('fullscreen').function() {
+	$(".imageTheatre").toggleClass('fullscreen');
+	window.function() {
  	window.location = "http://joekt.github.io/case_study_one.html"
    };;
 });
 $(".imageBook").click( function() {
-	$(".imageBook").toggleClass('fullscreen').function () {
+	$(".imageBook").toggleClass('fullscreen');
+	window.function () {
  	window.location = "http://joekt.github.io/case_study_two.html"
    };;
 });
