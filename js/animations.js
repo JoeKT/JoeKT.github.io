@@ -18,11 +18,11 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(".imageTheatre").click( function() {
-	window.setTimeout(travel1, 1000);
+	window.setTimeout(travel1, 200);
 	$(".imageTheatre").toggleClass('fullscreen').fadeOut("slow");
 });
 $(".imageBook").click( function() {
-	window.setTimeout(travel2, 1000);
+	window.setTimeout(travel2, 200);
 	$(".imageBook").toggleClass('fullscreen').fadeOut("slow");
 });
 
