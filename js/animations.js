@@ -18,20 +18,11 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(".imageTheatre").click( function() {
-	window.setTimeout(travel1, 200);
-	$(".imageTheatre").toggleClass('fullscreen').fadeOut("slow");
+	$(".imageTheatre").toggleClass('fullscreen').fadeOut(200).function(travel1);
 });
 $(".imageBook").click( function() {
-	window.setTimeout(travel2, 200);
-	$(".imageBook").toggleClass('fullscreen').fadeOut("slow");
+	$(".imageBook").toggleClass('fullscreen').fadeOut(200).function(travel2);
 });
-
-var travel1 = function () {
-	window.location = "http://joekt.github.io/case_study_one.html"
-};
-var travel2 =function () {
-	window.location = "http://joekt.github.io/case_study_two.html"
-};
 
 $(document).ready(function () {
 	if (window.innerWidth < 651) {
