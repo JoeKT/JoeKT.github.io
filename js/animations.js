@@ -17,6 +17,13 @@ $(".imageBook").mouseleave(function () {
 	$(".non-nav-three").css("border", "none");
 });
 
+$("#caseStudyTwo").onclick = transitionFunction;
+$("#caseStudyOne").onclick = transitionFunction;
+
+function transitionFunction () {
+	this.toggleClass('fullscreen');
+};
+
 $(document).ready(function () {
 	if (window.innerWidth < 651) {
 		$(".fadeOut").css("display", "none");		
@@ -83,3 +90,4 @@ $(window).load( function () {
   });
   $("#side-nav-span").fadeIn(800);
 });
+
