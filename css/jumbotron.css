@@ -168,6 +168,8 @@ path {
 	z-index: 30;
 	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     	transition: width 2s;
+    	-webkit-transition-timing-function: ease;
+    	transition-timing-function: ease;
 }
 .imageBook {
 	background-image: url(../images/map.jpg);
@@ -177,6 +179,8 @@ path {
 	z-index: 30;
 	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     	transition: width 2s;
+    	-webkit-transition-timing-function: ease;
+    	transition-timing-function: ease;
 }
 .descriptor-banner {
     position: fixed;
@@ -219,7 +223,11 @@ path {
     height: 100%; 
     position: fixed; 
     top: 0; 
-    left: 0; 
+    left: 0;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 .imageBook.fullscreen {
     z-index: 9999; 
@@ -227,7 +235,11 @@ path {
     height: 100%; 
     position: fixed; 
     top: 0; 
-    left: 0; 
+    left: 0;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
 /*
