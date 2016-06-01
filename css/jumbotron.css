@@ -166,6 +166,8 @@ path {
 	height: 600px;
 	position: relative;
 	z-index: 30;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    	transition: width 2s;
 }
 .imageBook {
 	background-image: url(../images/map.jpg);
@@ -173,6 +175,8 @@ path {
 	height: 600px;
 	position: relative;
 	z-index: 30;
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    	transition: width 2s;
 }
 .descriptor-banner {
     position: fixed;
