@@ -18,19 +18,16 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(".imageTheatre").click( function() {
-	$(".imageTheatre").toggleClass('fullscreen').function(travel1);
+	$(".imageTheatre").toggleClass('fullscreen').function() {
+ 	window.location = "http://joekt.github.io/case_study_one.html"
+   };;
 });
 $(".imageBook").click( function() {
-	$(".imageBook").toggleClass('fullscreen').function(travel2);
+	$(".imageBook").toggleClass('fullscreen').function () {
+ 	window.location = "http://joekt.github.io/case_study_two.html"
+   };;
 });
 
-var travel1 = function () {
- 	window.location = "http://joekt.github.io/case_study_one.html"
- };
- var travel2 =function () {
- 	window.location = "http://joekt.github.io/case_study_two.html"
- };
- 
 $(document).ready(function () {
 	if (window.innerWidth < 651) {
 		$(".fadeOut").css("display", "none");		
