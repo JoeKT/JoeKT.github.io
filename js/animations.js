@@ -24,6 +24,13 @@ $(".imageBook").click( function() {
 	$(".imageBook").toggleClass('fullscreen').function(travel2);
 });
 
+var travel1 = function () {
+ 	window.location = "http://joekt.github.io/case_study_one.html"
+ };
+ var travel2 =function () {
+ 	window.location = "http://joekt.github.io/case_study_two.html"
+ };
+ 
 $(document).ready(function () {
 	if (window.innerWidth < 651) {
 		$(".fadeOut").css("display", "none");		
