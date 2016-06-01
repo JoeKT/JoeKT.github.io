@@ -18,12 +18,12 @@ $(".imageBook").mouseleave(function () {
 });
 
 $(".imageTheatre").click( function() {
-	$(".imageTheatre").toggleClass('fullscreen');
-	window.setTimeout(travel1, 200);
+	$(".imageTheatre").toggleClass('fullscreen').fadeOut("slow");
+	window.setTimeout(travel1, 2000);
 });
 $(".imageBook").click( function() {
-	$(".imageBook").toggleClass('fullscreen');
-	window.setTimeout(travel2, 200);
+	$(".imageBook").toggleClass('fullscreen').fadeOut("slow");
+	window.setTimeout(travel2, 2000);
 });
 
 var travel1 = function () {
