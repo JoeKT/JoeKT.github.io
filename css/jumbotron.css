@@ -229,7 +229,12 @@ path {
     -webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
     transition: width .25s;
 }
-
+.surprise {
+	display: none;
+}
+.surprise:hover {
+	display: inherit;	
+}
 /*
 -----UX Page Styling-----
 */
