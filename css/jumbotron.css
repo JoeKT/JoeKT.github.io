@@ -230,10 +230,11 @@ path {
     transition: width .25s;
 }
 .surprise {
-	display: none;
+	visibility: hidden;
 }
 .surprise:hover {
-	display: inherit;	
+	visibility: visible;
+	color: #000;
 }
 /*
 -----UX Page Styling-----
