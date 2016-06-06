@@ -3,7 +3,6 @@
 */
 
 body {
-  font-family: "Francois One", sans-serif;
   color: black;
   background: #ffffff;
   font-size: 20px;
@@ -126,8 +125,11 @@ path {
 .fadeOut {
 	position: fixed;
 	z-index: +70;
-	top: 5%;
+	top: 0%;
+	left: 0%;
 	max-width: 100%;
+	background-color: white;
+	opacity: .8;
 }
 .hiddenBody {
 	display: none;
@@ -167,6 +169,7 @@ path {
 	height: 600px;
 	position: relative;
 	z-index: 30;
+	cursor: pointer;
 }
 .imageBook {
 	background-image: url(../images/map.jpg);
@@ -174,6 +177,7 @@ path {
 	height: 600px;
 	position: relative;
 	z-index: 30;
+	cursor: pointer;
 }
 .descriptor-banner {
     position: fixed;
@@ -202,7 +206,7 @@ path {
 }
 .descriptor-box-one, .descriptor-box-two {
     position: fixed;
-    top: 600px;
+    top: 40%;
     display: none;
     max-width: 350px;
 }
@@ -210,6 +214,36 @@ path {
 	height: 380px;
 }
 
+.imageTheatre.fullscreen {
+    z-index: 9999; 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0%; 
+    left: 0%;
+    -webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
+    transition: width .25s;
+}
+.imageBook.fullscreen {
+    z-index: 9999; 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0%; 
+    left: 0%;
+    -webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
+    transition: width .25s;
+}
+.surprise {
+	visibility: hidden;
+}
+.surprise:hover {
+	visibility: visible;
+	color: #000;
+}
+.fa-linkedin {
+	color: #0077B5;
+}
 /*
 -----UX Page Styling-----
 */
@@ -297,6 +331,9 @@ path {
 .appMap {
 	height: 650px;
 	background-repeat: no-repeat;
+	background-image: url(../images/appMap.png);
+	background-size: contain;
+
 }
 .origin {
 	background-image: url(../images/origin.jpg);
@@ -352,24 +389,20 @@ path {
 	height: 1000px;
 	margin-bottom: 20px;
 }
-.appmap {
-	background-image: url(../images/appMap.png);
-	background-size: contain;
-}
 .appSketchOne {
-	background-image: url(../images/appRapidSketchOne.png);
+	background-image: url(../images/AppRapidSketchOne.png);
 	background-size: contain;
 }
 .appSketchTwo {
-	background-image: url(../images/appRapidSketchTwo.png);
+	background-image: url(../images/AppRapidSketchTwo.png);
 	background-size: contain;
 }
 .appSketchThree {
-	background-image: url(../images/appRapidSketchThree.png);
+	background-image: url(../images/AppRapidSketchThree.png);
 	background-size: contain;
 }
 .appSketchFour {
-	background-image: url(../images/appRapidSketchFour.png);
+	background-image: url(../images/AppRapidSketchFour.png);
 	background-size: contain;
 }
 .appScreenOne {
@@ -400,7 +433,6 @@ path {
 	color: #222;
 	text-decoration: none;
 }
-
 /*
 -----@Media Styles-----
 */
@@ -455,8 +487,8 @@ path {
     	position: relative;
     	left: 10%;
     	top: 250px;
-    }
-    .name {
+        }
+        .name {
 		font-size: 40px !important;
 		padding-top: 220px !important;
 	}
@@ -501,7 +533,7 @@ path {
 	}
 	.name {
 		font-size: 40px !important;
-		padding-top: 120px !important;
+		padding-top: 0px !important;
 	}
 	.UX {
 		font-size: 40px !important;

@@ -17,9 +17,30 @@ $(".imageBook").mouseleave(function () {
 	$(".non-nav-three").css("border", "none");
 });
 
+$(".imageTheatre").click( function() {
+	$(".imageTheatre").toggleClass('fullscreen');
+	window.setTimeout(travel1, 200);
+});
+$(".imageBook").click( function() {
+	$(".imageBook").toggleClass('fullscreen');
+	window.setTimeout(travel2, 200);
+});
+
+var travel1 = function () {
+	window.location = "app_personas.html"
+};
+var travel2 =function () {
+	window.location = "game_algorithm.html"
+};
+
 $(document).ready(function () {
-	$(".fadeOut").fadeIn(3000).fadeOut(3000);
-	$(".hiddenBody").fadeIn(5000);
+	if (window.innerWidth < 651) {
+		$(".fadeOut").css("display", "none");		
+		$(".hiddenBody").fadeIn(2000);	
+	} else {
+		$(".fadeOut").fadeIn(3000).fadeOut(3000);
+		$(".hiddenBody").fadeIn(5000);	
+	}
 	if (window.innerWidth > 991) {
 		$(".descriptor-box-one").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
 			$(".descriptor-box-one").animate({"left":"20%"});
@@ -78,3 +99,4 @@ $(window).load( function () {
   });
   $("#side-nav-span").fadeIn(800);
 });
+
