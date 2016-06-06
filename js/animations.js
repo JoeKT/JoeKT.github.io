@@ -27,17 +27,14 @@ $(".imageBook").click( function() {
 });
 
 var travel1 = function () {
-<<<<<<< HEAD
 	window.location = "app_personas.html"
 };
 var travel2 =function () {
 	window.location = "game_algorithm.html"
-=======
 	window.location = "http://joekt.github.io/case_study_one.html"
 };
 var travel2 =function () {
 	window.location = "http://joekt.github.io/case_study_two.html"
->>>>>>> origin/master
 };
 
 $(document).ready(function () {
