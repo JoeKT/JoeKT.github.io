@@ -31,10 +31,6 @@ var travel1 = function () {
 };
 var travel2 =function () {
 	window.location = "game_algorithm.html"
-	window.location = "http://joekt.github.io/case_study_one.html"
-};
-var travel2 =function () {
-	window.location = "http://joekt.github.io/case_study_two.html"
 };
 
 $(document).ready(function () {
