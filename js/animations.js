@@ -27,10 +27,10 @@ $(".imageBook").click( function() {
 });
 
 var travel1 = function () {
-	window.location = "app_personas.html"
+	window.location = "app_design.html"
 };
 var travel2 =function () {
-	window.location = "game_algorithm.html"
+	window.location = "game_design.html"
 };
 
 $(document).ready(function () {
