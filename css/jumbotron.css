@@ -244,7 +244,9 @@ path {
 .fa-linkedin {
 	color: #0077B5;
 }
-
+.dropdown-menu {
+	position: static;
+}
 /*
 -----UX Page Styling-----
 */
