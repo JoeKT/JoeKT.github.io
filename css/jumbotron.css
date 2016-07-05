@@ -425,9 +425,9 @@ path {
 	background-size: contain;
 }
 .proto {
-	background: #ffffff;
-    text-align: center;
-    border-radius: 6px;
+	background: #888888;
+    	text-align: center;
+    	border-radius: 6px;
 }
 .proto:hover {
 	border: 2px solid #000;
