@@ -7,9 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<!--     <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Game Platform Design</title>
+    <title>Case Study: Online Game</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 
   <body>
 
-    <div class="site-wrapper">
+    <div>
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -50,55 +50,188 @@
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="game_algorithm.html">Game Algorithm: Economics</a></li>
-              <li><a href="game_personas.html">Personas</a></li>
-              <li class="active"><a href="platform_design.html">Platform Design</a></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Case Study: Online Game <span class="caret"></span></a>
+                <ul style="background: #333;" class="dropdown-menu">
+                  <li><a href="#1">About This Case Study</a></li>
+                  <br>
+                  <li><a href="#2">Personas</a></li>
+                  <br>
+                  <li><a href="#3">Game Algorithm: Economics</a></li>
+                  <br>
+                  <li><a href="#4">Visual Asset Creation</a></li>
+                </ul>
+              </li>
+              <li><a href="app_design.html">Case Study: Mobile App</a></li>
+              <li><a href="app_design.html">Case Study: PokemonGO Accessibility Rework</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </nav>
-      <div class="site-wrapper-inner">
-        <div class="inner cover container">
-          <div style="padding-top:65px; padding-bottom:70px;" id="prototype">
-            <h1 class="text-wrapper"><button class="proto"><a href="https://invis.io/JF4V4M1HY">View</a></button> the InvisionApp prototype</h1>
-          </div>
-          <div>
-            <h2>Pre-Platform Work</h2>
-            <div class="origin col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="originZoom col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-          </div>
-          <div>
-            <h2>Platform Sketches</h2>
-            <div class="sketchOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>              
-            <div class="sketchTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="sketchThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="sketchFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="sketchFive col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="sketchSix col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-          </div>
-          <div>                        
-            <h2>Platform Medium Fidelity Mock-Ups</h2>
-            <div class="meFiOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="meFiTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="meFiThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-            <div class="meFiFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-          </div>
-          <div>
-            <h2>Platform High Fidelity Detail</h2>
-            <div class="hiFi col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
-          </div>            
-        </div>
-
-        <footer>
-          <div class="text-wrapper">
-            <p>Shoot Me An Email: jrtritschler@gmail.com</p>
-            <a href="https://www.linkedin.com/in/joseph-kosciusko-tritschler-18b40298" target="blank"><i class="fa fa-linkedin fa-3x"></i></a>
-          </div>
-        </footer>
-
-      </div>
-
     </div>
+    <div id="1" class="about">
+      <div>
+        <h1>The premise:</h1>
+        <p>Europe 1477 is an educational game model that allows users to guide a nation through a combination of creative storytelling, roleplaying, and strategic thinking within a framework of statistics and moderator oversight.</p>
+        <h1>The concern:</h1>
+        <p>The game is played either entirely in person via paper and discussion or in the environment of a forum-style website. The lack of a platform greatly reduces clarity of information and places many additional tasks on the users (both players and moderators).</p>
+        <h1>This Case Study:</h1>
+        <p>This case study begins with an extesnsive look at the user types and the complexity of the data used by the game. In exploring one data set, the affect of two potential algorithms for the calculation of economic structures is examined through difference in playablity created. The study continues with a look at the game as a pen and paper model before sketching and mocksup for a platform are introduced. The study culminates in an interactive prototype hosted on InVision.</p>
+        <div style="padding-top:65px; padding-bottom:70px;" id="prototype">
+          <h1 class="text-wrapper"><button class="proto"><a href="https://invis.io/JF4V4M1HY">View</a></button> the InVision prototype</h1>
+        </div>
+      </div>
+    </div>
+    <div id="2" class="personas">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <img src="images/John.png" style="height : 140px; width : 140px; border-radius: 100%;">
+        <h2>Persona One: John Mendez</h2>
+        <h3>Archetype: Unengaged high school student</h3>
+        <p>John is a high school student in some more advanced classes with average to slightly above average grades. He does no particularly care about school and find history class especially boring.<br><br>Europe1477 was a class requirement and seemed a bit complicated at first because he did not want to put effort into using it. However, it does allow him to use his creative writing skills--a passion he never thought compatible with history.<br><br>Doing research for the game stories has increased his understanding of history without being as dull as his text book. He is even noticing it is easier to do well on the class exams.</p>
+        <p><strong>Must Haves:</strong>
+          <ul>
+            <li>Easy to follow gameplay</li>
+            <li>Not punishing to players not interested in investing heavily/using advanced features</li>
+            <li>Restricted game options (eg, specific class, school, etc.)</li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <img src="images/Keone.png" style="height : 140px; width : 140px; border-radius: 100%;">
+        <h2>Persona Two: Keone Maru</h2>
+        <h3>Archetype: Avid strategy and alt-history gamer</h3>
+        <p>Keone participated in Model UN but never found it indepth enough. He plays Axis and Allies for the detail and enjoys imagining how different WWII outcomes could have shapped the world. He finds the board and rules constricting at times though.<br><br>He has participated in similar story-driven history games before on various forums but is frustrated by the lack of players and the necessity of following multiple threads and the sub-optimal constraints on graphics.<br><br>A dedicated platform such as Europe1477 would increase visibility since the game would no longer be buried in a forum. The ability to track all a game's data in one place would cut down on the time cost and allow him to create more content in game.</p>
+        <p><strong>Must Haves:</strong>
+          <ul>
+            <li>High level of customization both as a moderator and a player</li>
+            <li>Allow for lots of information to be added and easily accessed</li>
+            <li>Tracking/rating system, allowing good players (reliable, fun, involved) to be recognized across games</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div id="3" class="algorithm">
+      <div>
+        <h1 class="cover-heading">Game Algorithm: Economics</h1>
+        <p class="lead">Players required to manage complex, multi-variate economics were faced with an unreasonable knowledge barrier and could not focus on the actual gameplay. By reducing economies to a solitary value without worrying about differing currencies, this problem was alleviated. By generating game statistics via an algorithm, moderator/game creator bias is significantly reduced as it removes the ability to favor various players arbitrarily.</p>
+        <br>
+        <p>Below are the formulas from which the economic values are derived.</p>
+        <br>
+        <h2>Economic Formula (Version 1)</h2>
+        <p>Economic Points = { ( [ National Stability / 2 ] * [Industrial Development - Devestation ] * [ # of Cities + ( # of Trade Routes / 10 ) ] * (Total Value of Goods Produced) ] ) }</p>
+        <h3>This formula <strong>produced a ratio of 1:358 between the highest and lowest economic values</strong>. It produced an <strong>average income of 768.797, which is higher than the income for 78.409% of the nations</strong>.</h3>
+        <p>The V1 formula produced a very top-heavy economic model; not player friendly.</p>
+        <iframe width="416.4415481832543" height="257.33333333333326" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1VwjrS9Id0K__2LE1HfouL6xf1S8DkvT3SXl_g4T8a9Q/pubchart?oid=1647613324&amp;format=interactive"></iframe>
+        <br> 
+        <h2>Economic Formula (Version 2)</h2>
+        <p>Economic Points = ( { [# of Cities / 10 + 1 ] + [ Industrial Development - Devestation ] + [ # of Trade Routes / 10 + 1 ] + National Stability / 10 + 1 } * Total Value of Goods Produced ) * ( 1 + National Authority / 10 )</p>
+        <h3>This formula <strong>produced a ratio of 1:26.930 between the highest and lowest economic values</strong>. It produced an <strong>average income of 337.459, which is higher than the income for 60.227% of the nations</strong>. While still a large range and ratio between extremes, the average nation gained significantly and the extremely high performers were brought down to a playable level.</h3>
+        <p>The V2 forumla produced a much more player-friendly range.</p>
+        <iframe width="418.39049586776855" height="258.5904648424323" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1VwjrS9Id0K__2LE1HfouL6xf1S8DkvT3SXl_g4T8a9Q/pubchart?oid=558726356&amp;format=interactive"></iframe>
+        <br>
+        <table class="table">
+          <thead>
+            <tr>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Nation</th>
+              <td>Union of Poland-Lithuania</td>
+              <td>Ottoman Empire</td>
+              <td>Mamluk Egypt</td>
+              <td>Aq Qoyunlu</td>
+              <td>Kingdom of Cyprus</td>
+              <td>Ireland</td>
+              <td>Sibir Khanate</td>
+              <td>Songhai Empire</td>
+            </tr>
+            <tr>
+              <th scope="row">Net Income (V1)</th>
+              <td>8375.400</td>
+              <td>6907.528</td>
+              <td>4901.824</td>
+              <td>4791.450</td>
+              <td>74.250</td>
+              <td>98.020</td>
+              <td>181.764</td>
+              <td>375.760</td>
+            </tr>
+            <tr>
+              <th scope="row">Net Income (V2)</th>
+              <td>1063.187</td>
+              <td>939.294</td>
+              <td>1120.000</td>
+              <td>1070.643</td>
+              <td>189.000</td>
+              <td>225.910</td>
+              <td>330.480</td>
+              <td>591.090</td>
+            </tr>
+            <tr>
+              <th scope="row">Net Change</th>
+              <td class="negative">-5968.234</td>
+              <td class="negative">-3781.824</td>
+              <td class="negative">-3720.807</td>
+              <td class="negative">-3551.334</td>
+              <td>114.75</td>
+              <td>127.89</td>
+              <td>148.716</td>
+              <td>215.33</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p>The Python algorithm below is for economic calculations V2. Some of the nations listed in the dictionary are Sweden, Kathiri, Hamburg-Lubeck, and Tlemcen.<p>
+        <br>
+        <p>The formula is:<br>Economic Points = ( { [# of Cities / 10 + 1 ] + [ Industrial Development - Devestation ] + [ # of Trade Routes / 10 + 1 ] + National Stability / 10 + 1 } * Total Value of Goods Produced ) * ( 1 + National Authority / 10 )<br><br>Devestation vaules are negative numbers.</p>
+        <iframe src="https://trinket.io/embed/python/059287d135?start=result" width="80%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="4" class="visuals"> 
+      <div>
+        <h1>Visual Assets</h1>
+        <h2>Pre-Platform Work</h2>
+        <p>These visuals are part of research into the mechanics of the pen and paper game before any work on the platform. The left image is part of exploring the trade routes and economics. The image on the right is a detail of the center during exploration on combat mechanics (for which a much lengthier algorithm than economics was developed).</p>
+        <div class="origin col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="originZoom col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+      </div>
+      <div>
+        <h2>Platform Sketches</h2>
+        <p>These sketches are part of a rapid prototyping session aimed at documenting the various user journey stages (ie: log-in, game selection/creation, general in-game, and specific in-game actions) and how much information could be displayed reasonably at each step.</p>
+        <div class="sketchOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>              
+        <div class="sketchTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="sketchThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="sketchFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="sketchFive col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="sketchSix col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+      </div>
+      <div>                        
+        <h2>Platform Medium Fidelity Mock-Ups</h2>
+        <p>These mock-ups build upon the earlier sketch explorations with added details and greater definition of item placement. They are also the basis of the InVision prototype.</p>
+        <div class="meFiOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="meFiTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="meFiThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+        <div class="meFiFour col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+      </div>
+      <div>
+        <h2>Platform High Fidelity Detail</h2>
+        <p>An look at one possible style for the finished product aimed at capturing the feeling of the gameplay (map based, medieval period) while maintaining high-contrast between entities for clarity.</p>
+        <div class="hiFi col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+      </div>
+      <div style="padding-top:65px; padding-bottom:70px;" id="prototype">
+        <h1 class="text-wrapper"><button class="proto"><a href="https://invis.io/JF4V4M1HY">View</a></button> the InVision prototype</h1>
+      </div>            
+    </div>
+
+    <footer>
+      <div class="text-wrapper">
+        <p>Shoot Me An Email: jrtritschler@gmail.com</p>
+        <a href="https://www.linkedin.com/in/joseph-kosciusko-tritschler-18b40298" target="blank"><i class="fa fa-linkedin fa-3x"></i></a>
+        <br>
+        <a href="https://docs.google.com/document/d/1dhQWVEGQu27SZbSftXhtIohUmRXy9bs6yuYtO7r60VI/edit?usp=sharing">Read one of my analysis and user inview reports</a>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -106,7 +239,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
-$(".imageMap").mouseenter(function () {
+$(".imageGo").mouseenter(function () {
 	$(".non-nav-one").css("border", "3px solid #CEB573");
 });
-$(".imageMap").mouseleave(function () {
+$(".imageGo").mouseleave(function () {
 	$(".non-nav-one").css("border", "none");
 });
 $(".imageTheatre").mouseenter(function () {
@@ -25,19 +25,19 @@ $(".imageBook").click( function() {
 	$(".imageBook").toggleClass('fullscreen');
 	window.setTimeout(travel2, 200);
 });
+$(".imageGo").click( function() {
+	$(".imageGo").toggleClass('fullscreen');
+	window.setTimeout(travel3, 200);
+});
 
 var travel1 = function () {
-<<<<<<< HEAD
-	window.location = "app_personas.html"
+	window.location = "app_design.html"
 };
 var travel2 =function () {
-	window.location = "game_algorithm.html"
-=======
-	window.location = "http://joekt.github.io/case_study_one.html"
+	window.location = "platform_design.html"
 };
-var travel2 =function () {
-	window.location = "http://joekt.github.io/case_study_two.html"
->>>>>>> origin/master
+var travel3 =function () {
+	window.location = "pokemonGo_Rework.html"
 };
 
 $(document).ready(function () {
@@ -51,11 +51,15 @@ $(document).ready(function () {
 	if (window.innerWidth > 991) {
 		$(".descriptor-box-one").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
 			$(".descriptor-box-one").animate({"left":"20%"});
-			$(".descriptor-box-one").animate({"left":"15%"});
+			$(".descriptor-box-one").animate({"left":"12%"});
 			});
 		$(".descriptor-box-two").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
 			$(".descriptor-box-two").animate({"left":"70%"});
-			$(".descriptor-box-two").animate({"left":"65%"});
+			$(".descriptor-box-two").animate({"left":"68%"});
+			});
+		$(".descriptor-box-three").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
+			$(".descriptor-box-three").animate({"left":"45%"});
+			$(".descriptor-box-three").animate({"left":"40%"});
 			});
 	} else if (window.innerWidth > 400) {
 		$(".descriptor-box-one").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
@@ -66,6 +70,10 @@ $(document).ready(function () {
 			$(".descriptor-box-two").animate({"left":"155%"});
 			$(".descriptor-box-two").animate({"left":"10%"});
 			});
+		$(".descriptor-box-three").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
+			$(".descriptor-box-three").animate({"left":"85%"});
+			$(".descriptor-box-three").animate({"left":"10%"});
+			});
 	} else {
 		$(".descriptor-box-one").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
 			$(".descriptor-box-one").animate({"left":"5%"});
@@ -74,6 +82,10 @@ $(document).ready(function () {
 		$(".descriptor-box-two").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
 			$(".descriptor-box-two").animate({"left":"5%"});
 			$(".descriptor-box-two").animate({"left":"0%"});
+			});
+		$(".descriptor-box-three").css("left", "0").css("overflow", "hidden").delay(2000).fadeIn("slow", function () {
+			$(".descriptor-box-three").animate({"left":"5%"});
+			$(".descriptor-box-three").animate({"left":"0%"});
 			});
 	}
 });

@@ -2,12 +2,65 @@
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+.about {
+  padding-top: 105px;
+  background-color: #888;
+  display: inline-block;
 }
+.about div, .algorithm div, .appMap div {
+  background-color: #888;
+}
+.about p, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6, .about ul, .about li {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.algorithm {
+  float: right;
+}
+.algorithm p, .algorithm h1, .algorithm h2, .algorithm h3, .algorithm h4, .algorithm h5, .algorithm h6, .algorithm ul, .algorithm li {   
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.cover-heading {
+  padding-top: 65px;
+}
+.personas {
+  display: inline-block;
+}
+.personas div, .visuals div {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.personas p, .personas h1, .personas h2, .personas h3, .personas h4, .personas h5, .personas h6, .personas ul, .personas li {
+  color: black;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.visuals p, .visuals h1, .visuals h2, .visuals h3, .visuals h4, .visuals h5, .visuals h6, .visuals ul, .visuals li {   
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.visuals {
+  padding-top: 145px;
+  float: right;
+}
+.table {
+  max-width: 80%;
+/*  margin-left: 3%;*/
+}
+.appMap {
+  float: none;
+}
+.appMap p, .appMap h1, .appMap h2, .appMap h3, .appMap h4, .appMap h5, .appMap h6, .appMap ul, .appMap li {   
+  color: white;
+  padding: 65px 20px 40px 20px;
+}
+/* Links */
 
 /* Custom default button */
 .btn-default,
@@ -27,17 +80,16 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 }
 body {
-  color: #fff;
+/*  color: #fff;*/
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
@@ -93,7 +145,12 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
-
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+.nav li {
+  display: inline-block;
+}
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;

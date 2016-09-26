@@ -86,25 +86,6 @@ footer .text-wrapper p {
 	opacity: 1;
 	background-color: white;
 }
-.xactoBack {
-    background-image: url(../images/xacto.png);
-    background-size: contain;
-    position: fixed;
-    height: 610px;
-    width: 480px;
-    bottom: 0;
-    left: 86%;
-    background-repeat: no-repeat;
-}
-.matBack{
-	background-image: url(../images/greenMatBack.jpg);
-	background-size: cover;
-	position: fixed;
-	height: 300%;
-	width: 100%;
-	background-repeat: no-repeat;
-	opacity: .75;
-}
 /*
 -----Path Styling for SVG-----
 */
@@ -179,6 +160,14 @@ path {
 	z-index: 30;
 	cursor: pointer;
 }
+.imageGo {
+	background-image: url(../images/pgo1.png);
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 30;
+	cursor: pointer;
+}
 .descriptor-banner {
     position: fixed;
     top: 100px;
@@ -204,7 +193,7 @@ path {
 .massive-button p, .massive-button h1 {
 	color: white;
 }
-.descriptor-box-one, .descriptor-box-two {
+.descriptor-box-one, .descriptor-box-two, .descriptor-box-three {
     position: fixed;
     top: 40%;
     display: none;
@@ -234,6 +223,16 @@ path {
     -webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
     transition: width .25s;
 }
+.imageGo.fullscreen {
+    z-index: 9999; 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0%; 
+    left: 0%;
+    -webkit-transition: width .25s; /* For Safari 3.1 to 6.0 */
+    transition: width .25s;
+}
 .surprise {
 	visibility: hidden;
 }
@@ -241,12 +240,9 @@ path {
 	visibility: visible;
 	color: #000;
 }
-<<<<<<< HEAD
 .fa-linkedin {
 	color: #0077B5;
 }
-=======
->>>>>>> origin/master
 /*
 -----UX Page Styling-----
 */
@@ -340,7 +336,7 @@ path {
 }
 .origin {
 	background-image: url(../images/origin.jpg);
-	background-size: contain;
+	background-size: cover;
 }
 .originZoom {
 	background-image: url(../images/originZoom.jpg);
@@ -394,19 +390,19 @@ path {
 }
 .appSketchOne {
 	background-image: url(../images/AppRapidSketchOne.png);
-	background-size: contain;
+	background-size: cover;
 }
 .appSketchTwo {
 	background-image: url(../images/AppRapidSketchTwo.png);
-	background-size: contain;
+	background-size: cover;
 }
 .appSketchThree {
 	background-image: url(../images/AppRapidSketchThree.png);
-	background-size: contain;
+	background-size: cover;
 }
 .appSketchFour {
 	background-image: url(../images/AppRapidSketchFour.png);
-	background-size: contain;
+	background-size: cover;
 }
 .appScreenOne {
 	background-image: url(../images/appScreenOne.png);
@@ -447,7 +443,7 @@ path {
 		padding-right: 15px;
 		font-size: 16px;
 	}
-	.descriptor-box-one, .descriptor-box-two {
+	.descriptor-box-one, .descriptor-box-two, .descriptor-box-three {
     	position: relative;
     	left: 25%;
     	top: 250;
@@ -481,7 +477,7 @@ path {
 	}
 }
 @media (max-width: 650px) {
-	.descriptor-box-one, .descriptor-box-two {
+	.descriptor-box-one, .descriptor-box-two, .descriptor-box-three {
     	position: relative;
     	left: 10%;
     	top: 250px;
@@ -514,7 +510,7 @@ path {
 	}
 }
 @media (max-width: 530px) {
-	.descriptor-box-one, .descriptor-box-two {
+	.descriptor-box-one, .descriptor-box-two, .descriptor-box-three {
     	position: relative;
     	left: 0%;
     	top: 250;

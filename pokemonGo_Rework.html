@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--     <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Case Study: PokemonGO Accessibility Rework</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="platform_design.html">Case Study: Online Game</a></li>
+              <li><a href="app_design.html">Case Study: Mobile App</a></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Case Study: PokemonGO Accessibility Rework<span class="caret"></span></a>
+                <ul style="background: #333;" class="dropdown-menu">
+                  <li><a href="#1">About This Case Study</a></li>
+                  <br>
+                  <li><a href="#2">Shapes</a></li>
+                  <br>
+                  <li><a href="#3">Meters</a></li>
+                  <br>
+                  <li><a href="#4">Numerals</a></li>
+                  <br>
+                  <li><a href="#5">Conclusion</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+    <div id="1" class="about">
+      <div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <h1>The concern:</h1>
+          <p>The colored circle (pictured) relays information about the difficulty of capturing the Pokemon via a culturally-common <em>Red-Orange-Yellow-Green</em> scale.</p>
+          <ol>
+            <li>This range is not accessible to to varying degrees for 8-10% of the male population.</li>
+            <li>The surface area of the colored ring is too small to allow color-impaired users to use tint to determine its color easily.</li>
+            <li>The small surface area of the color can blend in with some of the Pokemon, especially for those with color-impaired vision.</li>
+          </ol>
+          <h1>The Need:</h1>
+          <p>A secondary source of the same information on difficulty that is easily identifiable. Such an addition need not be present by default but should always show once toggled on until toggled off.</p>
+        </div>
+        <div>
+          <img class="col-lg-6 col-md-6 col-sm-6 col-xs-12" src="images/pgo1.png">
+        </div>
+      </div>
+    </div>
+    <div id="2" class="personas">
+      <div>
+        <h2>Potential Solution: Shapes</h2>
+        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+          <p>The use of different shapes to replace the colored ring to denote difficult would alleviate the concern. However, it is not a perfect solution</p>
+          <ol>
+            <li>Shapes would only provide difficulty categories (ie, circle = easy, triangle = medium, square = difficult) while color allows for a continual gradient.</li>
+            <br>
+            <li>Users recieve a bonus for landing a Pokeball within the colored area and different shapes for would affect the surface area available for that bonus.</li>
+          </ol>
+          <img src="images/shapes2.png" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img src="images/shapes4.png" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        </div>
+      </div>
+    </div>
+    <div id="3" class="personas">
+      <div>
+        <h2>Potential Solution: Meters</h2>
+        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+          <p>The use of meters allows the colored ring to remain unmodified while still addressing the need for greater clarity for some users. Such meters could take several different forms detailed below.</p>
+          <ol>
+            <li>The <em>a</em> bar meters would denote difficulty based on fullness.</li>
+            <br>
+            <li><em>a2</em> shows how a "known" amount of difficulty could be displayed followed by a "possible" range. The actual difficult would lie somewhere between the beginning and end of the "possible" range. This could be used to prevent too much insight into the game's mechanics.</li>
+            <br>
+            <li><em>a3</em> shows a much less precise "bar" method where as the difficulty increases, so do the amount of the objects filled in, in relation to the whole.</li>
+            <br>
+            <li>The <em>b</em> radial meters would mark the outside of the stationary white ring present and increase in frequency in a clockwise fashion to denote increasing difficulty.</li>
+          </ol>
+          <img src="images/meterSketch.jpg" class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+          <img src="images/meter1.png" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img src="images/meter2.png" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img src="images/meter3.png" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img src="images/meter4.png" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        </div>
+      </div>
+    </div>
+    <div id="4" class="personas">
+       <div>
+        <h2>Potential Solution: Numerals</h2>
+        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+          <p>The use of a numerical value placed on the screen would provide the absolute clearest representation of difficulty. Depicted in the bottom-left of the mock-up, it could also be placed in the top-left or top-right without interfering with existing information, detracting from the focal point, or using valuable screen real estate in the comfortable interaction zone.</p>
+          <ol>
+            <li>Such definitive representation may be too much insight into the game's mechanics.</li>
+            <br>
+            <li>Users would need to remember the range of difficulties, unless it were displayed as 9.8/10.</li>
+          </ol>
+          <img src="images/numerical1.png" class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+        </div>
+      </div>
+    </div>
+    <div id="5" class="personas">
+      <p>The three solutions above are part of six originally brainstormed. The remaining three were ruled out during the next round of iteration due to:</p>
+      <ul>
+        <li><strong>Thickness:</strong> adjusting the thickness of the colored ring based on difficulty had two main problems. First, it was not intuitive if a thicker ring was more or less difficult. Second, it significantly decreased the amount of the pokemon that was visible and as the ring shrank it became a filled circle rather than a ring.</li>
+        <li><strong>White-Black:</strong> changing the red-orange-yellow-green spectrum to a white-grey-black spectrum did not really improve user understanding. It requires users to recall which shade of grey they are viewing and the "colored" surface area remains very small. Also, many of these other solutions would have a positive increase in clarity for users with other types of vision impairment but this would not.</li>
+        <li><strong>Textual:</strong> Textual information would be customizable and thus allow for control over the precision of the information and also allow for it to be included in a thematically appropriate manner. However, it would not be native to the screen but need to be called up with a user action and then most likely require further actions to progress through and close. The addition of steps for users when the information could easily be displayed alternatively is a poor experience.</li>
+      </ul>
+      <p>Below is a table ranking all six solutions for "ease of use", ease of integration with existing system", "clarity", "visual cohesiveness", and "overall". The a score, the better.</p> 
+      <table class="table col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12">
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td>Overall</td>
+            <td>Ease of Use</td>
+            <td>Ease of Integration</td>
+            <td>Clarity</td>
+            <td>Visual Cohesiveness</td>
+          </tr>
+          <tr>
+            <th scope="row">Shapes</th>
+            <td>4.75</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row">Thickness</th>
+            <td>4.50</td>
+            <td>3</td>
+            <td>6</td>
+            <td>5</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">White-Black</th>
+            <td>5.00</td>
+            <td>6</td>
+            <td>3</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th scope="row">Meters</th>
+            <td>2.50</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">Numerical</th>
+            <td>1.00</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">Textual</th>
+            <td>3.50</td>
+            <td>6</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <div class="text-wrapper">
+        <p>Shoot Me An Email: jrtritschler@gmail.com</p>
+        <a href="https://www.linkedin.com/in/joseph-kosciusko-tritschler-18b40298" target="blank"><i class="fa fa-linkedin fa-3x"></i></a>
+        <br>
+        <a href="https://docs.google.com/document/d/1dhQWVEGQu27SZbSftXhtIohUmRXy9bs6yuYtO7r60VI/edit?usp=sharing">Read one of my analysis and user inview reports</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

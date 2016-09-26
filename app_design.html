@@ -7,9 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<!--     <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Design and Testing</title>
+    <title>Case Study: Mobile App</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,22 +50,89 @@
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="app_personas.html">Personas</a></li>
-              <li class="active"><a href="app_design.html">Design and Testing</a></li>
+              <li><a href="platform_design.html">Case Study: Online Game</a></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Case Study: Mobile App <span class="caret"></span></a>
+                <ul style="background: #333;" class="dropdown-menu">
+                  <li><a href="#1">About This Case Study</a></li>
+                  <br>
+                  <li><a href="#2">Personas</a></li>
+                  <br>
+                  <li><a href="#3">App Map</a></li>
+                  <br>
+                  <li><a href="#4">Visual Asset Creation</a></li>
+                </ul>
+              </li>
+              <li><a href="app_design.html">Case Study: PokemonGO Accessibility Rework</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </nav>
-      <div class="inner cover container" style="padding-left:15px;">
-        <div style="padding-top:65px; padding-bottom:70px;" id="prototype">
-          <h1 class="text-wrapper"><button class="proto"><a href="https://invis.io/WK6WGO6BE">View</a></button> the InvisionApp prototype of the paper test</h1>
+      <div id="1" class="about">
+        <div>
+          <h1>The premise:</h1>
+          <p>An interested party had the idea for a new social app around sharing photographs and other recorded memories in a relationship. They had some ideas about what form this app would take and some of the functionality and wanted to explore these further.</p>
+          <h1>This Case Study:</h1>
+          <p>This case study identified parts of the user base and potential interests and use cases before moving into the informational hierarchy as part of a stakeholder workshop to clarify the product ideas. I created many rough sketches to prototype some of the ideas and then created higher fidelity sketches in the choosen direction. I  used these higher fidelity screens to conduct early round user testing to provide more information for the stakeholders.</p>
+          <div style="padding-top:65px; padding-bottom:70px;" id="prototype">
+            <h1 class="text-wrapper"><button class="proto"><a href="https://invis.io/WK6WGO6BE">View</a></button> the InvisionApp prototype of the paper test</h1>
+          </div>
         </div>
+      </div>
+      <div id="2" class="personas">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img src="images/Molly.png" style="height : 140px; width : 140px; border-radius: 100%;">
+          <h2>Persona One: Molly Lazzari</h2>
+          <h3>Archetype: Social butterfly</h3>
+          <p>Molly is a high school student with a large social group from her various extracurricular activities. She has a boyfriend and a younger sister with whom she spends the majority of her time.<br><br>Most of her memory bowls would feature her closest realtionships: boyfriend, sister, best friend. She would also enjoy creating one for her soccer team that is on the way to the championship this year. There is also an awesome party coming up at Eva's and lining a memory bowl to the facebook group would be a great way to remember everything.</p>
+          <p><strong>Must Haves:</strong>
+            <ul>
+              <li>Lots of customization options</li>
+              <li>Allow the create to grant and/or revoke access to memories for specific people</li>
+              <li>Integrate with social media</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img src="images/Frederick.png" style="height : 140px; width : 140px; border-radius: 100%;">
+          <h2>Persona Two: Frederick Siegl</h2>
+          <h3>Archetype: Avid Traveler</h3>
+          <p>Frederick travels a lot and is usually documenting his trips on his phone. He collects small trinkets from every location with an interest in displaying them someday. He finds the idea of trip scrapbooks cool but has never been motivated to actually create any.<br><br>Frederick would create memory bowls for each trip and share them with travel partners, friends going to the same place, and perhaps his blog followers.<br><br>He would want to choose the order pictures were displayed, number/placement on the "page", style and background, and perhaps add captions/text outside pictures. If viewers chose to randomly draw memories from the bowl, he wouuld want to set a generic template and assign unique captions to display with each picture.</p>
+          <p><strong>Must Haves:</strong>
+            <ul>
+              <li>Robust functionality offline</li>
+              <li>Smooth integration with phone camera and photo library</li>
+              <li>Ability to import and export photos</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <img src="images/Tam.png" style="height : 140px; width : 140px; border-radius: 100%;">
+          <h2>Persona Three: Tam Knopp</h2>
+          <h3>Archetype: Novice User</h3>
+          <p>Tam is going to Washington, D.C. with her class to visit the Smithsonian museums for the first time. The whole class is really excited but also afraid they won't be able to remember everythin to share with their families and friends back home.<br><br>Tam volunteered to create a group memory bowl but she does not want the responsibility of choosing a theme or creating everything herself. She absolutely does not want to type in everyone's information to share the bowl.<br><br>She does have their phone numbers and is facebook friends with them though. Ideally each individual would request an invite to the bowl from Tam.</p>
+          <p><strong>Must Haves:</strong>
+            <ul>
+              <li>Possibility of high number of collaborators on a single bowl</li>
+              <li>Each collaborator could style the memories they added or pages they created</li>
+              <li>Easy to understand controls and customization</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="3" class="appMap">
         <div>
           <h2>App Map</h2>
           <div class="appMap col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
         </div>
+      </div>
+      <div id="4" class="visuals"> 
+        <div>
+          <h1>Visual Assets</h1>
+        </div>
         <div>
           <h2>Selected Rapid Sketches</h2>
+          <p>These sketches are part of a rapid prototyping session aimed at documenting the various user journey stages (ie: log-in, selection/creation of media, general options/settings, and social interactions) and how much information could be displayed reasonably at each step.</p>
           <div class="appSketchOne col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
           <div class="appSketchTwo col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
           <div class="appSketchThree col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
@@ -73,17 +140,23 @@
         </div>
         <div>                        
           <h2>Selected Paper Test App Screens</h2>
+          <p>These higher fidelity sketches build upon the earlier sketch explorations with added details and greater definition of item placement. They are also the basis of the paper testing (which may be viewed as an InVision prototype below).</p>
           <div class="appScreenOne col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
           <div class="appScreenTwo col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
           <div class="appScreenThree col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
           <div class="appScreenFour col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
-        </div>                   
+        </div>
+        <div style="padding-top:105px; padding-bottom:70px;" id="prototype">
+          <h1 class="text-wrapper" style="padding-top:105px;"><button class="proto"><a href="https://invis.io/WK6WGO6BE">View</a></button> the InvisionApp prototype of the paper test</h1>
+        </div>         
       </div>
 
       <footer>
         <div class="text-wrapper">
           <p>Shoot Me An Email: jrtritschler@gmail.com</p>
           <a href="https://www.linkedin.com/in/joseph-kosciusko-tritschler-18b40298" target="blank"><i class="fa fa-linkedin fa-3x"></i></a>
+          <br>
+          <a href="https://docs.google.com/document/d/1dhQWVEGQu27SZbSftXhtIohUmRXy9bs6yuYtO7r60VI/edit?usp=sharing">Read one of my analysis and user inview reports</a>
         </div>
       </footer>
 
@@ -95,7 +168,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
