@@ -35,12 +35,9 @@ var travel1 = function () {
 };
 var travel2 =function () {
 	window.location = "platform_design.html"
-<<<<<<< HEAD
 };
 var travel3 =function () {
 	window.location = "pokemonGo_Rework.html"
-=======
->>>>>>> origin/master
 };
 
 $(document).ready(function () {
